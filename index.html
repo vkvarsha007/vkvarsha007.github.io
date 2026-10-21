@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Varsha Kumari | .NET & Angular Developer</title>
+<meta name="description" content="Portfolio of Varsha Kumari, Software Developer in Pune: C#, ASP.NET Core, Web API, Angular, SQL Server.">
+<meta property="og:title" content="Varsha Kumari | .NET & Angular Developer">
+<meta property="og:description" content="Software Developer in Pune: C#, ASP.NET Core, Web API, Angular, SQL Server.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2318212e'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Arial' font-weight='700' font-size='15' fill='%23d9b25a'%3EVK%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: single readable column, a mono "spot ticker" strip of the stack, a featured project card with a flow diagram */
+:root{
+  --bg:#f5f6f8; --surface:#ffffff; --ink:#18212e; --muted:#5b6575; --line:#dde1e7;
+  --gold:#a07a22; --gold-soft:#f4ecd9; --up:#1f7a4d;
+  --display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;
+  --body:"IBM Plex Sans",ui-sans-serif,system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#10151d; --surface:#171e29; --ink:#e8ecf2; --muted:#9aa4b3; --line:#2a3342;
+  --gold:#d9b25a; --gold-soft:#2a2414; --up:#4cc38a; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#10151d; --surface:#171e29; --ink:#e8ecf2; --muted:#9aa4b3; --line:#2a3342;
+  --gold:#d9b25a; --gold-soft:#2a2414; --up:#4cc38a; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.6 var(--body)}
+a{color:inherit}
+.wrap{max-width:880px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header{padding-block:56px 32px}
+.eyebrow{font:500 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+h1{font:700 clamp(40px,8vw,72px)/1.02 var(--display);letter-spacing:-.02em;margin:14px 0 12px;text-wrap:balance}
+.lede{font-size:19px;color:var(--muted);max-width:60ch;margin:0}
+.lede strong{color:var(--ink);font-weight:600}
+.meta{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:22px;font:400 14px var(--mono);color:var(--muted)}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:8px;border:1px solid var(--ink);font:500 14px var(--body);text-decoration:none;background:var(--ink);color:var(--bg);cursor:pointer}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+
+.ticker{border-block:1px solid var(--line);background:var(--surface);overflow:hidden}
+.track{display:flex;gap:36px;width:max-content;padding-block:12px;font:500 13px var(--mono);animation:slide 40s linear infinite}
+.track span{white-space:nowrap;color:var(--muted)}
+.track b{color:var(--ink);font-weight:500;margin-right:8px}
+.track i{font-style:normal;color:var(--up)}
+@keyframes slide{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.track{animation:none;flex-wrap:wrap;width:auto;gap:10px 28px}}
+
+section{padding-block:48px;border-bottom:1px solid var(--line)}
+section:last-of-type{border-bottom:0}
+h2{font:700 28px/1.2 var(--display);margin:8px 0 20px;letter-spacing:-.01em}
+h3{font:600 19px/1.3 var(--body);margin:0}
+p{margin:0 0 12px;max-width:68ch}
+
+.job{display:grid;grid-template-columns:170px 1fr;gap:8px 28px}
+.job .when{font:400 14px var(--mono);color:var(--muted);padding-top:3px}
+.job .co{color:var(--muted);margin:2px 0 12px}
+ul.ticks{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+ul.ticks li{padding-left:20px;position:relative}
+ul.ticks li::before{content:"";position:absolute;left:2px;top:.62em;width:8px;height:8px;border-radius:2px;background:var(--gold)}
+
+.feature{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:28px;display:grid;gap:20px}
+.feature .top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;align-items:baseline}
+.tag{font:500 12px var(--mono);color:var(--gold);background:var(--gold-soft);padding:4px 8px;border-radius:6px}
+.spot{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.spot div{background:var(--bg);padding:12px 14px;font:400 12px var(--mono);color:var(--muted)}
+.spot strong{display:block;font:600 15px var(--body);color:var(--ink);margin-top:2px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:400 13px var(--mono);border:1px solid var(--line);border-radius:999px;padding:4px 10px;color:var(--ink)}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:20px}
+.mini{border:1px solid var(--line);border-radius:14px;padding:24px;display:grid;gap:12px;align-content:start;min-width:0}
+.flow{width:100%;height:auto;display:block}
+.flow rect{fill:var(--bg);stroke:var(--line)}
+.flow text{fill:var(--ink);font:500 12px var(--body)}
+.flow .sub{fill:var(--muted);font:400 10px var(--mono)}
+.flow path{stroke:var(--gold);fill:none;stroke-width:1.5}
+.flow polygon{fill:var(--gold)}
+
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.skills h3{font:500 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.skills ul{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+
+.contact{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.addr{font:500 15px var(--mono);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:10px 14px;user-select:all}
+footer{padding-block:32px 48px;font:400 13px var(--mono);color:var(--muted)}
+
+@media (max-width:680px){
+  .job{grid-template-columns:1fr}
+  .cols,.skills{grid-template-columns:1fr}
+  .spot{grid-template-columns:repeat(2,1fr)}
+  .feature{padding:20px}
+}
+body{margin:0}
+html{scroll-behavior:smooth}
+.contact .addr{text-decoration:none;color:var(--ink)}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <div class="eyebrow">Software Developer · .NET &amp; Angular</div>
+  <h1>Varsha Kumari</h1>
+  <p class="lede">I build web applications end to end with <strong>C#, ASP.NET Core, Web API and Angular</strong> on SQL Server. For the past year I have worked on a live US e-commerce platform for gold and silver bullion.</p>
+  <div class="meta"><span>Pune, Maharashtra</span><span>From Jamshedpur</span><span>1+ yr experience</span></div>
+  <div class="actions">
+    <a class="btn" href="https://www.linkedin.com/in/vkvarsha/" target="_blank" rel="noopener">LinkedIn ↗</a>
+    <a class="btn ghost" href="cv.html">View CV</a>
+    <a class="btn ghost" href="https://github.com/vkvarsha007" target="_blank" rel="noopener">GitHub ↗</a>
+    <a class="btn ghost" href="#contact">Contact</a>
+  </div>
+</header>
+
+<div class="ticker" aria-label="Tech stack">
+  <div class="track">
+    <span><b>C#</b><i>▲ daily</i></span><span><b>ASP.NET CORE MVC</b><i>▲</i></span><span><b>WEB API</b><i>▲</i></span><span><b>ANGULAR</b><i>▲</i></span><span><b>TYPESCRIPT</b><i>▲</i></span><span><b>SQL SERVER</b><i>▲</i></span><span><b>STORED PROCEDURES</b><i>▲</i></span><span><b>ENTITY FRAMEWORK</b><i>▲</i></span><span><b>DAPPER</b><i>▲</i></span><span><b>ADO.NET</b><i>▲</i></span><span><b>CLAUDE API</b><i>▲ new</i></span><span><b>GEMINI API</b><i>▲ new</i></span><span><b>MS TEAMS</b><i>▲</i></span><span><b>POSTMAN</b><i>▲</i></span>
+    <span aria-hidden="true"><b>C#</b><i>▲ daily</i></span><span aria-hidden="true"><b>ASP.NET CORE MVC</b><i>▲</i></span><span aria-hidden="true"><b>WEB API</b><i>▲</i></span><span aria-hidden="true"><b>ANGULAR</b><i>▲</i></span><span aria-hidden="true"><b>TYPESCRIPT</b><i>▲</i></span><span aria-hidden="true"><b>SQL SERVER</b><i>▲</i></span><span aria-hidden="true"><b>STORED PROCEDURES</b><i>▲</i></span><span aria-hidden="true"><b>ENTITY FRAMEWORK</b><i>▲</i></span><span aria-hidden="true"><b>DAPPER</b><i>▲</i></span><span aria-hidden="true"><b>ADO.NET</b><i>▲</i></span><span aria-hidden="true"><b>CLAUDE API</b><i>▲ new</i></span><span aria-hidden="true"><b>GEMINI API</b><i>▲ new</i></span><span aria-hidden="true"><b>MS TEAMS</b><i>▲</i></span><span aria-hidden="true"><b>POSTMAN</b><i>▲</i></span>
+  </div>
+</div>
+
+<main class="wrap">
+  <section id="experience">
+    <div class="eyebrow">Experience</div>
+    <h2>Where I work</h2>
+    <div class="job">
+      <div class="when">Jul 2025 – Present</div>
+      <div>
+        <h3>Junior Software Developer</h3>
+        <div class="co">Realisieren Technologies Pvt. Ltd. · Pune · On-site</div>
+        <ul class="ticks">
+          <li>Develop and maintain features for BOLD Precious Metals using ASP.NET Core, Web API and Angular.</li>
+          <li>Build RESTful APIs in C# and test them with Postman.</li>
+          <li>Write SQL Server queries and stored procedures; access data with Entity Framework, Dapper and ADO.NET.</li>
+          <li>Integrate AI models (Claude and Gemini) into application features.</li>
+          <li>Automate daily reporting to Microsoft Teams.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="eyebrow">Projects</div>
+    <h2>What I've built</h2>
+
+    <article class="feature">
+      <div class="top">
+        <h3>BOLD Precious Metals</h3>
+        <span class="tag">E-commerce · US client</span>
+      </div>
+      <p>An online dealer in Austin, Texas that sells gold, silver, platinum, palladium and copper bullion, coins and jewelry. I work on the .NET backend, the APIs and the Angular front end of the store.</p>
+      <div class="spot" aria-label="Metals sold on the platform">
+        <div>XAU<strong>Gold</strong></div>
+        <div>XAG<strong>Silver</strong></div>
+        <div>XPT<strong>Platinum</strong></div>
+        <div>XPD<strong>Palladium</strong></div>
+      </div>
+      <ul class="ticks">
+        <li>Live spot-price ticker and price charts</li>
+        <li>Filterable product catalog, cart and secure checkout</li>
+        <li>Customer accounts with order history and order tracking</li>
+        <li>Sell To Us buyback, bullion storage, precious-metals IRA and portfolio tracker</li>
+      </ul>
+      <div class="chips"><span class="chip">C#</span><span class="chip">ASP.NET Core</span><span class="chip">Web API</span><span class="chip">Angular</span><span class="chip">SQL Server</span><span class="chip">EF / Dapper</span></div>
+      <div><a class="btn ghost" href="https://www.boldpreciousmetals.com/" target="_blank" rel="noopener">Visit live site ↗</a></div>
+    </article>
+
+    <div class="cols">
+      <article class="mini">
+        <span class="tag" style="justify-self:start">Automation</span>
+        <h3>Daily report to Microsoft Teams</h3>
+        <p>A scheduled job runs once a day and posts the link to a Google Sheet report in a Teams channel, so the team gets it without anyone sending it by hand.</p>
+        <svg class="flow" viewBox="0 0 320 70" role="img" aria-label="Scheduled job, then Google Sheet, then Teams channel">
+          <rect x="1" y="12" width="88" height="46" rx="8"/><text x="45" y="34" text-anchor="middle">Daily job</text><text class="sub" x="45" y="48" text-anchor="middle">.NET scheduler</text>
+          <path d="M92 35 H112"/><polygon points="112,31 120,35 112,39"/>
+          <rect x="121" y="12" width="88" height="46" rx="8"/><text x="165" y="34" text-anchor="middle">Google Sheet</text><text class="sub" x="165" y="48" text-anchor="middle">report link</text>
+          <path d="M212 35 H222"/><polygon points="222,31 230,35 222,39"/>
+          <rect x="231" y="12" width="88" height="46" rx="8"/><text x="275" y="34" text-anchor="middle">Teams</text><text class="sub" x="275" y="48" text-anchor="middle">channel post</text>
+        </svg>
+      </article>
+      <article class="mini">
+        <span class="tag" style="justify-self:start">AI integration</span>
+        <h3>Claude and Gemini in the app</h3>
+        <p>Connected Anthropic Claude and Google Gemini APIs to application features through C# services, so users get AI-generated results inside the product.</p>
+        <div class="chips"><span class="chip">Claude API</span><span class="chip">Gemini API</span><span class="chip">REST</span><span class="chip">C#</span></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="eyebrow">Skills</div>
+    <h2>Tech stack</h2>
+    <div class="skills">
+      <div><h3>Backend</h3><ul><li>C#</li><li>ASP.NET Core MVC</li><li>ASP.NET Web API</li><li>RESTful APIs</li></ul></div>
+      <div><h3>Data</h3><ul><li>SQL Server</li><li>Stored procedures</li><li>Entity Framework</li><li>Dapper</li><li>ADO.NET</li></ul></div>
+      <div><h3>Frontend &amp; tools</h3><ul><li>Angular</li><li>TypeScript</li><li>HTML &amp; CSS</li><li>Postman</li><li>Claude &amp; Gemini APIs</li><li>Microsoft Teams</li></ul></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="eyebrow">Contact</div>
+    <h2>Let's talk</h2>
+    <p>I'm open to .NET and full-stack developer roles in Pune or remote.</p>
+    <div class="contact">
+      <a class="addr" id="email" href="mailto:vkvarsh31@gmail.com">vkvarsh31@gmail.com</a>
+      <button class="btn ghost" id="copy" type="button">Copy email</button>
+      <a class="addr" href="tel:+917349860204">+91 73498 60204</a>
+    </div>
+    <div class="contact" style="margin-top:12px">
+      <a class="btn" href="Varsha_Kumari_CV.pdf" download>Download CV (PDF)</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/vkvarsha/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a class="btn ghost" href="https://github.com/vkvarsha007" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </section>
+</main>
+<footer class="wrap">Varsha Kumari · Pune, India</footer>
+
+<script>
+document.getElementById('copy').addEventListener('click', function(){
+  var t = document.getElementById('email').textContent, b = this;
+  try{ navigator.clipboard.writeText(t).then(function(){ b.textContent='Copied'; setTimeout(function(){b.textContent='Copy email'},1500); }, sel); }catch(e){ sel(); }
+  function sel(){ var r=document.createRange(); r.selectNodeContents(document.getElementById('email')); var s=getSelection(); s.removeAllRanges(); s.addRange(r); }
+});
+</script>
+</body>
+</html>
