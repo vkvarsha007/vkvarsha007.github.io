@@ -4,391 +4,476 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Varsha Kumari | .NET Full Stack Developer</title>
-<meta name="description" content="Varsha Kumari, .NET Full Stack Developer in Pune: .NET Core, ASP.NET MVC, Web API, Angular and SQL Server. Building BOLD Precious Metals eCommerce and Cerebro.">
-<meta name="theme-color" content="#14110d">
+<meta name="description" content="Varsha Kumari, .NET Full Stack Developer in Pune: .NET Core, ASP.NET MVC, Web API, Angular and SQL Server. Building the BOLD Precious Metals eCommerce platform and Cerebro.">
+<meta name="theme-color" content="#f6f1ea">
 <meta property="og:title" content="Varsha Kumari | .NET Full Stack Developer">
 <meta property="og:description" content=".NET Core · ASP.NET MVC · Web API · Angular · SQL Server · Pune">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%2314110d' stroke='%23d6b46a' stroke-width='2'/%3E%3Ctext x='16' y='21' text-anchor='middle' font-family='Georgia' font-style='italic' font-size='14' fill='%23e8cf93'%3EVK%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='16' fill='%231f4d3f'/%3E%3Ctext x='16' y='21.5' text-anchor='middle' font-family='Georgia' font-style='italic' font-size='15' fill='%23f6f1ea'%3EV%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,600&family=Manrope:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
 <style>
-/* Concept: "the bullion desk" — warm espresso dark, champagne-gold hairlines, serif display, fixed profile sidebar + scrolling dossier on the right */
+/* Editorial template: ivory paper, charcoal ink, emerald accent, champagne detail. Giant serif name + sculptural visual, image-like project covers, big "Let's talk" close */
 :root{
-  --bg:#14110d; --panel:#1b1712; --panel2:#221d16; --line:#3a3127; --line2:#54473a;
-  --ink:#f3ece0; --muted:#b4a796; --dim:#7f7365;
-  --gold:#d6b46a; --gold2:#f1d99b; --goldd:#a8853f; --sage:#9fb89a; --rose:#d99a8b;
-  --serif:"Fraunces",Georgia,"Times New Roman",serif;
-  --sans:"Manrope",ui-sans-serif,system-ui,sans-serif;
-  --mono:"Fira Code",ui-monospace,Menlo,Consolas,monospace;
-  --side:360px; color-scheme:dark;
+  --paper:#f6f1ea; --paper2:#efe7dc; --card:#fbf8f3; --ink:#1d1b19; --soft:#5f5850; --dim:#8b8278; --line:#ddd3c6;
+  --emerald:#1f4d3f; --emerald2:#2f6b58; --mint:#cfe3d8; --champ:#c9a96e; --champ2:#e7d3a8;
+  --serif:"Instrument Serif",Georgia,"Times New Roman",serif;
+  --sans:"Hanken Grotesk",ui-sans-serif,system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.7 var(--sans);-webkit-font-smoothing:antialiased}
-body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.5;background:
-  radial-gradient(900px 500px at 85% -10%,rgba(214,180,106,.10),transparent 60%),
-  radial-gradient(700px 500px at 10% 110%,rgba(159,184,154,.06),transparent 60%)}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.65 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
 a{color:inherit}
-::selection{background:rgba(214,180,106,.35)}
-:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:6px}
-.gold{background:linear-gradient(100deg,var(--goldd),var(--gold2) 45%,var(--gold) 60%,var(--goldd));background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sheen 7s ease-in-out infinite}
-@keyframes sheen{0%,100%{background-position:100% 0}50%{background-position:0 0}}
+::selection{background:var(--mint)}
+:focus-visible{outline:2px solid var(--emerald);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1240px;margin:0 auto;padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px))}
+em,.it{font-family:var(--serif);font-style:italic;font-weight:400}
+.label{font:500 12.5px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--dim)}
+.label b{color:var(--emerald);font-weight:500}
 
-/* ---------- sidebar ---------- */
-.side{position:fixed;inset:0 auto 0 0;width:var(--side);padding:44px 40px 32px max(40px,env(safe-area-inset-left,0px));display:flex;flex-direction:column;border-right:1px solid var(--line);background:linear-gradient(180deg,#17130f,#120f0b);z-index:5}
-.seal{width:84px;height:84px;border-radius:50%;display:grid;place-items:center;position:relative;margin-bottom:26px}
-.seal::before{content:"";position:absolute;inset:0;border-radius:50%;border:1px solid var(--gold);box-shadow:0 0 0 6px rgba(214,180,106,.07)}
-.seal::after{content:"";position:absolute;inset:-9px;border-radius:50%;border:1px dashed rgba(214,180,106,.35);animation:spin 40s linear infinite}
-@keyframes spin{to{transform:rotate(360deg)}}
-.seal span{font:italic 600 30px var(--serif);color:var(--gold2)}
-.side h1{font:600 38px/1.05 var(--serif);letter-spacing:-.01em;margin:0 0 8px}
-.side .role{font:500 15px var(--sans);color:var(--gold);margin:0 0 16px}
-.side .blurb{color:var(--muted);font-size:15px;margin:0 0 22px}
-.avail{display:inline-flex;align-items:center;gap:9px;font:500 12.5px var(--mono);color:var(--sage);border:1px solid rgba(159,184,154,.3);border-radius:999px;padding:6px 12px;align-self:flex-start}
-.avail i{width:7px;height:7px;border-radius:50%;background:var(--sage);animation:pulse 2.2s infinite}
-@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(159,184,154,.6)}100%{box-shadow:0 0 0 9px rgba(159,184,154,0)}}
-.toc{list-style:none;margin:36px 0 0;padding:0;display:grid;gap:2px}
-.toc a{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--dim);font:600 13px var(--sans);letter-spacing:.14em;text-transform:uppercase;padding:9px 0;transition:color .25s}
-.toc a::before{content:"";height:1px;width:24px;background:currentColor;transition:width .3s}
-.toc a:hover,.toc a.on{color:var(--gold2)}
-.toc a.on::before,.toc a:hover::before{width:52px}
-.side .foot{margin-top:auto;display:grid;gap:18px}
-.icons{display:flex;gap:10px}
-.icons a{width:40px;height:40px;border-radius:50%;border:1px solid var(--line2);display:grid;place-items:center;color:var(--muted);transition:all .25s}
-.icons a:hover{color:var(--bg);background:var(--gold);border-color:var(--gold)}
-.icons svg{width:17px;height:17px}
-.cv{display:flex;align-items:center;justify-content:space-between;text-decoration:none;padding:13px 18px;border-radius:12px;background:var(--gold);color:#1a140c;font:700 14.5px var(--sans);transition:background .25s,transform .25s}
-.cv:hover{background:var(--gold2);transform:translateY(-2px)}
-.cv svg{width:18px;height:18px}
+/* nav */
+header{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid transparent;transition:border-color .3s}
+header.scrolled{border-bottom-color:var(--line)}
+header .wrap{display:flex;align-items:center;gap:28px;height:74px}
+.logo{font:400 26px var(--serif);text-decoration:none;letter-spacing:-.01em}
+.logo span{color:var(--emerald)}
+nav.links{display:flex;gap:30px;margin:0 auto}
+nav.links a{text-decoration:none;font:500 15px var(--sans);color:var(--soft);position:relative}
+nav.links a::after{content:"";position:absolute;left:0;bottom:-4px;height:1px;width:0;background:var(--ink);transition:width .3s}
+nav.links a:hover{color:var(--ink)}
+nav.links a:hover::after{width:100%}
+.talk{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font:600 15px var(--sans);background:var(--ink);color:var(--paper);padding:12px 20px;border-radius:999px;transition:background .3s}
+.talk:hover{background:var(--emerald)}
+.talk svg{width:16px;height:16px}
+.menu{display:none;margin-left:auto;background:none;border:1px solid var(--line);border-radius:999px;width:44px;height:44px;cursor:pointer;color:var(--ink);place-items:center}
+.menu svg{width:20px;height:20px}
 
-/* ---------- main ---------- */
-main{margin-left:var(--side);position:relative;z-index:1}
-.inner{max-width:900px;padding:56px max(56px,env(safe-area-inset-right,0px)) 40px 64px}
-section{padding-block:40px 70px;scroll-margin-top:20px}
-.kicker{font:500 12.5px var(--mono);color:var(--gold);letter-spacing:.06em;margin-bottom:14px;display:flex;align-items:center;gap:10px}
-.kicker::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--line2),transparent)}
-h2{font:400 clamp(34px,4.6vw,52px)/1.08 var(--serif);letter-spacing:-.02em;margin:0 0 18px;text-wrap:balance}
-h2 em{font-style:italic;color:var(--gold2)}
-h3{font:600 22px/1.25 var(--serif);margin:0}
-p{margin:0 0 12px}
-.lead{color:var(--muted);font-size:17px;max-width:62ch}
+/* hero */
+.hero{padding-block:44px 40px;position:relative}
+.hero-top{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:26px}
+.avail{display:inline-flex;align-items:center;gap:10px;font:500 13px var(--mono);color:var(--emerald)}
+.avail i{width:8px;height:8px;border-radius:50%;background:var(--emerald2);animation:pulse 2.4s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(47,107,88,.5)}100%{box-shadow:0 0 0 10px rgba(47,107,88,0)}}
+.name{font:400 clamp(72px,15.5vw,236px)/.82 var(--serif);letter-spacing:-.035em;margin:0;position:relative;z-index:2}
+.name .dot{color:var(--emerald)}
+.name .l2{display:block;padding-left:12%}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-top:34px}
+.intro{font:400 clamp(24px,2.6vw,34px)/1.25 var(--serif);max-width:20ch;margin:0}
+.intro em{color:var(--emerald)}
+.hero-side{display:grid;gap:22px;justify-items:start}
+.hero-side p{color:var(--soft);margin:0;max-width:44ch}
+.hero-side p b{color:var(--ink);font-weight:600}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font:600 15px var(--sans);padding:14px 24px;border-radius:999px;border:1px solid var(--ink);transition:all .3s}
+.btn.fill{background:var(--emerald);border-color:var(--emerald);color:var(--paper)}
+.btn.fill:hover{background:var(--ink);border-color:var(--ink)}
+.btn.line:hover{background:var(--ink);color:var(--paper)}
+.btn svg{width:16px;height:16px}
 
-/* bento */
-.bento{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
-.tile{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:24px;position:relative;overflow:hidden;min-width:0;transition:border-color .3s,transform .3s}
-.tile:hover{border-color:var(--line2);transform:translateY(-3px)}
-.t-hello{grid-column:span 6;padding:34px 34px 30px;background:linear-gradient(140deg,#231d15,#17130e 60%)}
-.t-hello h2{font-size:clamp(32px,4.4vw,50px);margin-bottom:16px}
-.t-hello p{color:var(--muted);font-size:17px;max-width:60ch;margin:0}
-.t-hello p b{color:var(--ink);font-weight:600}
-.t-hello .orn{position:absolute;right:-40px;top:-40px;width:220px;height:220px;border-radius:50%;border:1px solid rgba(214,180,106,.18)}
-.t-hello .orn::after{content:"";position:absolute;inset:30px;border-radius:50%;border:1px solid rgba(214,180,106,.12)}
-.t-now{grid-column:span 3}
-.t-yrs{grid-column:span 3;display:flex;flex-direction:column;justify-content:space-between}
-.t-metal{grid-column:span 4}
-.t-edu{grid-column:span 2}
-.lab{font:600 11px var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--dim);margin-bottom:12px}
-.big{font:600 64px/1 var(--serif)}
-.big small{font:italic 400 22px var(--serif);color:var(--muted);margin-left:6px}
-.tile .sm{color:var(--muted);font-size:14.5px;margin:6px 0 0}
-.board{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:12px;overflow:hidden}
-.board div{padding:14px 14px 12px;border-right:1px solid var(--line);background:var(--bg)}
-.board div:last-child{border-right:0}
-.board small{display:block;font:500 11.5px var(--mono);color:var(--dim)}
-.board b{display:block;font:600 17px var(--serif);margin-top:16px}
-.board i{display:block;height:3px;border-radius:2px;margin-top:10px;background:var(--c)}
-.tile .note{font:500 12px var(--mono);color:var(--dim);margin-top:12px}
+/* sculpture (CSS 3D-ish object) */
+.sculpt{position:absolute;right:max(24px,calc((100vw - 1240px)/2 + 24px));top:58px;width:clamp(220px,30vw,400px);aspect-ratio:1;z-index:1;pointer-events:none}
+.sculpt .ring{position:absolute;inset:6%;border-radius:50%;background:conic-gradient(from 210deg,#163a2f,#2f6b58,#7fb39d,#e9dcc0,#c9a96e,#2f6b58,#163a2f);mask:radial-gradient(circle,transparent 46%,#000 47%);-webkit-mask:radial-gradient(circle,transparent 46%,#000 47%);transform:rotateX(62deg) rotateZ(-18deg);filter:drop-shadow(0 30px 30px rgba(31,77,63,.25));animation:turn 18s linear infinite}
+.sculpt .orb{position:absolute;left:30%;top:22%;width:40%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 32% 28%,#fff8e8 0%,#e7d3a8 18%,#c9a96e 45%,#7a5e2c 85%);box-shadow:0 30px 50px -18px rgba(90,64,24,.55);animation:bob 7s ease-in-out infinite}
+.sculpt .shadow{position:absolute;left:24%;right:24%;bottom:10%;height:8%;border-radius:50%;background:radial-gradient(ellipse,rgba(29,27,25,.22),transparent 70%)}
+@keyframes turn{to{transform:rotateX(62deg) rotateZ(342deg)}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
 
-/* work list */
-.work{border-top:1px solid var(--line)}
-.row{display:grid;grid-template-columns:150px 1fr;gap:28px;padding:34px 0;border-bottom:1px solid var(--line);position:relative}
-.row::before{content:"";position:absolute;left:0;top:-1px;height:1px;width:0;background:var(--gold);transition:width .6s ease}
-.row:hover::before{width:100%}
-.row .meta{font:500 12.5px var(--mono);color:var(--dim);display:grid;gap:8px;align-content:start}
-.row .meta b{font-weight:500;color:var(--gold)}
-.row h3{font-size:28px;margin-bottom:10px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
-.row h3 a{text-decoration:none}
-.row h3 a:hover{color:var(--gold2)}
-.status{font:600 11px var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--sage);border:1px solid rgba(159,184,154,.35);padding:4px 9px;border-radius:999px}
-.row p{color:var(--muted)}
-.feat{list-style:none;margin:14px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:8px 24px}
-.feat li{color:#d8ccbb;font-size:15px;padding-left:20px;position:relative}
-.feat li::before{content:"◆";position:absolute;left:0;top:1px;font-size:10px;color:var(--gold)}
-.stack{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
-.stack span{font:500 12.5px var(--mono);color:var(--muted);padding:4px 10px;border-radius:6px;border:1px solid var(--line2)}
-.pipe{display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-top:14px;font:500 13px var(--mono);color:#d8ccbb}
-.pipe span{padding:6px 11px;border-radius:8px;background:var(--panel2);border:1px solid var(--line)}
-.pipe em{font-style:normal;color:var(--gold)}
+/* ticker band */
+.band{background:var(--emerald);color:var(--paper);overflow:hidden;margin-top:70px}
+.band .track{display:flex;gap:48px;width:max-content;padding-block:22px;animation:slide 40s linear infinite;font:400 34px var(--serif);white-space:nowrap}
+.band .track span{display:inline-flex;align-items:center;gap:48px}
+.band .track span::after{content:"✦";font-size:18px;color:var(--champ2)}
+.band .track i{font-style:italic;color:var(--champ2)}
+@keyframes slide{to{transform:translateX(-50%)}}
 
-/* skills spec sheet */
-.spec{display:grid;grid-template-columns:repeat(2,1fr);gap:0 40px}
-.spec div{display:grid;grid-template-columns:150px 1fr;gap:16px;padding:18px 0;border-bottom:1px dashed var(--line2)}
-.spec dt{font:600 12px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--gold);padding-top:3px}
-.spec dd{margin:0;color:#e2d8c8;font-size:15.5px}
+/* sections */
+section.s{padding-block:120px 20px}
+.s-head{display:grid;grid-template-columns:260px 1fr;gap:40px;margin-bottom:56px;align-items:end}
+h2{font:400 clamp(44px,6.4vw,92px)/.95 var(--serif);letter-spacing:-.03em;margin:0}
+h2 em{color:var(--emerald)}
+.s-head p{color:var(--soft);max-width:52ch;margin:14px 0 0}
+h3{font:400 clamp(30px,3.2vw,42px)/1.05 var(--serif);margin:0;letter-spacing:-.01em}
+
+/* about */
+.about{display:grid;grid-template-columns:260px 1fr;gap:40px}
+.about .quote{font:400 clamp(30px,3.6vw,48px)/1.18 var(--serif);margin:0 0 36px;letter-spacing:-.01em}
+.about .quote em{color:var(--emerald)}
+.about .cols{display:grid;grid-template-columns:1fr 1fr;gap:34px;color:var(--soft)}
+.about .cols b{color:var(--ink);font-weight:600}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--ink);margin-top:56px}
+.fact{padding:22px 20px 0 0}
+.fact big{display:block;font:400 clamp(44px,5vw,64px)/1 var(--serif)}
+.fact big em{color:var(--emerald)}
+.fact span{display:block;color:var(--soft);font-size:15px;margin-top:8px}
+
+/* services */
+.services{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}
+.svc{padding:36px 30px 40px 0;border-right:1px solid var(--line)}
+.svc+.svc{padding-left:30px}
+.svc:last-child{border-right:0}
+.svc .ico{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;background:var(--mint);color:var(--emerald);margin-bottom:26px}
+.svc .ico svg{width:24px;height:24px}
+.svc p{color:var(--soft);margin:14px 0 18px}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tags span{font:500 12.5px var(--mono);padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--soft)}
+
+/* work */
+.work{display:grid;gap:90px}
+.proj{display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:center}
+.proj.flip{grid-template-columns:1fr 1.25fr}
+.proj.flip .cover{order:2}
+.cover{border-radius:26px;overflow:hidden;aspect-ratio:4/3;position:relative;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.proj:hover .cover{transform:scale(.985)}
+.proj .info .label{margin-bottom:14px;display:block}
+.proj .info p{color:var(--soft);margin:18px 0 22px}
+.proj .info ul{list-style:none;margin:0 0 22px;padding:0;display:grid;gap:8px}
+.proj .info li{display:flex;gap:12px;color:var(--ink)}
+.proj .info li::before{content:"";flex-shrink:0;width:18px;height:1px;background:var(--emerald);margin-top:13px}
+.more{display:inline-flex;align-items:center;gap:10px;font:600 15px var(--sans);text-decoration:none;border-bottom:1px solid var(--ink);padding-bottom:3px}
+.more:hover{color:var(--emerald);border-color:var(--emerald)}
+
+/* cover 1: bullion bars */
+.c-bold{background:radial-gradient(120% 90% at 20% 0%,#2d6a56,#173b30 60%,#10291f)}
+.c-bold .bars{position:absolute;left:50%;top:54%;transform:translate(-50%,-50%);width:78%;display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.bar{height:clamp(74px,9vw,118px);border-radius:12px;position:relative;overflow:hidden;clip-path:polygon(7% 0,93% 0,100% 100%,0 100%);display:flex;align-items:flex-end;justify-content:space-between;padding:0 18px 14px;font:400 clamp(20px,2vw,28px) var(--serif);color:rgba(20,16,10,.82)}
+.bar small{font:500 12px var(--mono);letter-spacing:.08em}
+.bar::after{content:"";position:absolute;top:0;bottom:0;width:40%;left:-60%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent);animation:glint 5.5s ease-in-out infinite}
+.au{background:linear-gradient(160deg,#fbe7ad,#d4a94e 50%,#9d7428)}
+.ag{background:linear-gradient(160deg,#f6f7f9,#c3c8d0 50%,#8b929c)}.ag::after{animation-delay:1.3s}
+.pt{background:linear-gradient(160deg,#eef2f6,#a9b6c4 50%,#6f7d8c)}.pt::after{animation-delay:2.6s}
+.pd{background:linear-gradient(160deg,#efe9f2,#bdb1c6 50%,#7f728a)}.pd::after{animation-delay:3.9s}
+@keyframes glint{0%,55%{left:-60%}100%{left:130%}}
+.c-bold .brand{position:absolute;left:28px;top:24px;font:400 26px var(--serif);color:var(--champ2)}
+.c-bold .live{position:absolute;right:24px;top:26px;font:500 12px var(--mono);color:#cfe3d8;display:flex;gap:8px;align-items:center}
+.c-bold .live i{width:7px;height:7px;border-radius:50%;background:#7fe0b4}
+
+/* cover 2: dashboard */
+.c-cere{background:linear-gradient(150deg,#e9dcc0,#d8c49a)}
+.dash{position:absolute;inset:12% 9%;background:var(--card);border-radius:16px;box-shadow:0 30px 60px -25px rgba(60,45,20,.45);display:grid;grid-template-columns:24% 1fr;overflow:hidden}
+.dash .sb{background:var(--emerald);padding:16px 12px;display:grid;gap:10px;align-content:start}
+.dash .sb i{height:8px;border-radius:4px;background:rgba(246,241,234,.35)}
+.dash .sb i:first-child{width:60%;height:12px;background:var(--champ2);margin-bottom:8px}
+.dash .main{padding:16px;display:grid;grid-template-rows:auto auto 1fr;gap:12px}
+.dash .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.dash .kpis div{background:var(--paper2);border-radius:10px;padding:10px}
+.dash .kpis b{display:block;height:14px;width:60%;border-radius:4px;background:var(--emerald2);opacity:.85}
+.dash .kpis span{display:block;height:6px;width:80%;border-radius:3px;background:var(--line);margin-top:8px}
+.dash .chart{display:flex;align-items:flex-end;gap:7px;height:70px;padding:0 4px}
+.dash .chart i{flex:1;border-radius:4px 4px 0 0;background:linear-gradient(var(--champ),#b48e4c);animation:grow 3.5s ease-in-out infinite alternate}
+.dash .chart i:nth-child(odd){background:linear-gradient(var(--emerald2),var(--emerald))}
+@keyframes grow{from{transform:scaleY(.6);transform-origin:bottom}to{transform:scaleY(1);transform-origin:bottom}}
+.dash .rows{display:grid;gap:7px;align-content:start}
+.dash .rows i{height:9px;border-radius:4px;background:var(--paper2)}
+.dash .rows i:nth-child(2n){width:85%}
+.c-cere .brand{position:absolute;left:9%;top:4%;font:400 22px var(--serif);color:var(--ink)}
+
+/* cover 3 & 4 small */
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.mini .cover{aspect-ratio:16/10;margin-bottom:24px}
+.mini p{color:var(--soft);margin:12px 0 0}
+.c-teams{background:linear-gradient(140deg,#1d1b19,#33302b)}
+.flow{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:12px;padding:20px;flex-wrap:wrap}
+.flow span{font:500 13px var(--mono);color:var(--paper);padding:12px 16px;border-radius:12px;background:rgba(246,241,234,.08);border:1px solid rgba(246,241,234,.18)}
+.flow em{font-size:26px;color:var(--champ2)}
+.flow .clock{position:absolute;right:22px;top:18px;font:400 22px var(--serif);color:var(--champ2)}
+.c-ai{background:radial-gradient(90% 80% at 70% 30%,#cfe3d8,#9cc5b2 55%,#5c9a83)}
+.c-ai .orbs{position:absolute;inset:0}
+.c-ai .orbs i{position:absolute;border-radius:50%;background:radial-gradient(circle at 30% 30%,#fff,rgba(255,255,255,.2) 60%,transparent);animation:bob 6s ease-in-out infinite}
+.c-ai .orbs i:nth-child(1){width:34%;aspect-ratio:1;left:14%;top:22%}
+.c-ai .orbs i:nth-child(2){width:22%;aspect-ratio:1;left:56%;top:16%;animation-delay:-2s}
+.c-ai .orbs i:nth-child(3){width:16%;aspect-ratio:1;left:62%;top:58%;animation-delay:-4s}
+.c-ai .word{position:absolute;left:24px;bottom:18px;font:400 30px var(--serif);color:var(--emerald)}
+.c-ai .word em{color:var(--ink)}
 
 /* experience */
-.xp{display:grid;gap:18px}
-.job{display:grid;grid-template-columns:150px 1fr;gap:28px;background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:30px}
-.job .when{font:500 13px var(--mono);color:var(--gold)}
-.job .where{color:var(--muted);margin:6px 0 14px;font-size:15px}
-.job ul{margin:0;padding:0;list-style:none;display:grid;gap:9px}
-.job li{color:#d8ccbb;padding-left:22px;position:relative;font-size:15.5px}
-.job li::before{content:"";position:absolute;left:0;top:.75em;width:12px;height:1px;background:var(--gold)}
+.xp{border-top:1px solid var(--ink)}
+.xrow{display:grid;grid-template-columns:260px 1fr auto;gap:40px;padding:34px 0;border-bottom:1px solid var(--line);align-items:start;transition:background .3s}
+.xrow:hover{background:linear-gradient(90deg,transparent,rgba(207,227,216,.35),transparent)}
+.xrow .when{font:500 14px var(--mono);color:var(--dim);padding-top:10px}
+.xrow .where{color:var(--soft);margin-top:6px}
+.xrow ul{margin:16px 0 0;padding-left:20px;color:var(--soft);display:grid;gap:6px}
+.xrow .badge{font:500 12px var(--mono);color:var(--emerald);border:1px solid var(--emerald);border-radius:999px;padding:6px 12px;white-space:nowrap;margin-top:8px}
 
 /* approach */
-.flow{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border:1px solid var(--line);border-radius:20px;overflow:hidden}
-.flow div{padding:24px 20px;border-right:1px solid var(--line);background:var(--panel);transition:background .3s}
-.flow div:last-child{border-right:0}
-.flow div:hover{background:var(--panel2)}
-.flow i{font:italic 400 30px var(--serif);color:var(--gold);display:block;margin-bottom:12px}
-.flow b{display:block;font:600 15.5px var(--sans);margin-bottom:6px}
-.flow span{color:var(--muted);font-size:14px;line-height:1.55;display:block}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+.step{border-top:2px solid var(--ink);padding-top:18px}
+.step .n{font:400 52px/1 var(--serif);color:var(--emerald)}
+.step b{display:block;font:600 17px var(--sans);margin:14px 0 6px}
+.step span{color:var(--soft);font-size:15px}
 
 /* contact */
-.contact{text-align:left;padding:46px;border-radius:24px;border:1px solid var(--line2);background:radial-gradient(600px 300px at 100% 0%,rgba(214,180,106,.12),transparent 60%),var(--panel)}
-.contact h2{font-size:clamp(36px,5vw,58px)}
-.mail{display:inline-flex;align-items:center;gap:14px;flex-wrap:wrap;font:400 clamp(22px,3vw,32px) var(--serif);text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:4px;margin:10px 0 26px;overflow-wrap:anywhere}
-.mail:hover{color:var(--gold2)}
-.copy{font:600 12px var(--sans);letter-spacing:.08em;text-transform:uppercase;background:transparent;color:var(--gold);border:1px solid var(--line2);border-radius:999px;padding:8px 14px;cursor:pointer;margin-left:6px;vertical-align:middle}
-.copy:hover{border-color:var(--gold)}
-.reach{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.reach a{display:block;text-decoration:none;padding:16px 18px;border-radius:14px;border:1px solid var(--line);background:var(--bg);transition:border-color .25s}
-.reach a:hover{border-color:var(--gold)}
-.reach small{display:block;font:600 11px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--dim);margin-bottom:4px}
-.reach span{font:500 14.5px var(--mono);overflow-wrap:anywhere}
-footer{padding:30px 0 50px;color:var(--dim);font:500 12.5px var(--mono);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.contact{padding-block:140px 60px;text-align:center}
+.contact .label{display:block;margin-bottom:20px}
+.contact .big{font:400 clamp(70px,14vw,210px)/.85 var(--serif);letter-spacing:-.04em;margin:0}
+.contact .big em{color:var(--emerald)}
+.contact .mail{display:inline-block;margin-top:40px;font:400 clamp(24px,3.4vw,44px) var(--serif);text-decoration:none;border-bottom:1px solid var(--ink);overflow-wrap:anywhere}
+.contact .mail:hover{color:var(--emerald);border-color:var(--emerald)}
+.contact .row{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin-top:36px}
+.copy{font:600 14px var(--sans);background:transparent;border:1px solid var(--line);border-radius:999px;padding:12px 20px;cursor:pointer;color:var(--ink)}
+.copy:hover{border-color:var(--ink)}
+footer{border-top:1px solid var(--line);padding-block:28px 40px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:var(--dim);font:500 13px var(--mono)}
+footer nav{display:flex;gap:20px}
+footer a{text-decoration:none}
+footer a:hover{color:var(--ink)}
 
-.side{overflow-y:auto}
-@media (min-width:861px) and (max-height:860px){.side{padding-top:28px;padding-bottom:22px}.seal{width:66px;height:66px;margin-bottom:16px}.seal span{font-size:24px}.side h1{font-size:32px}.side .role{margin-bottom:10px}.side .blurb{font-size:14px;margin-bottom:14px}.toc{margin-top:18px}.toc a{padding:5px 0}.side .foot{gap:12px;padding-top:16px}}
-/* reveal only with JS */
-.js .rv{opacity:0;transform:translateY(18px);transition:opacity .9s ease,transform .9s ease}
+/* reveal (JS only) */
+.js .rv{opacity:0;transform:translateY(30px);transition:opacity 1s cubic-bezier(.2,.7,.2,1),transform 1s cubic-bezier(.2,.7,.2,1)}
 .js .rv.in{opacity:1;transform:none}
+.js .name .w{display:inline-block;opacity:0;transform:translateY(60%);transition:all 1.1s cubic-bezier(.2,.7,.2,1)}
+.js .name.in .w{opacity:1;transform:none}
+.js .name.in .w.d2{transition-delay:.15s}
 
-/* ---------- responsive ---------- */
-@media (max-width:1080px){:root{--side:300px}.side{padding-inline:30px}.inner{padding-inline:40px}.spec{grid-template-columns:1fr}}
-@media (max-width:860px){
-  .side{position:relative;width:auto;border-right:0;border-bottom:1px solid var(--line);padding:28px max(20px,env(safe-area-inset-left,0px)) 24px}
-  .side .top{display:flex;gap:18px;align-items:center}
-  .seal{width:64px;height:64px;margin:0;flex-shrink:0}.seal span{font-size:23px}
-  .side h1{font-size:30px}
-  .toc{display:none}
-  .side .foot{margin-top:22px;grid-template-columns:auto 1fr;align-items:center}
-  main{margin-left:0}
-  .inner{padding:24px max(20px,env(safe-area-inset-right,0px)) 30px max(20px,env(safe-area-inset-left,0px))}
-  .t-now,.t-yrs,.t-metal,.t-edu{grid-column:span 6}
-  .row,.job{grid-template-columns:1fr;gap:12px}
-  .flow{grid-template-columns:1fr 1fr}.flow div{border-bottom:1px solid var(--line)}
-  .reach{grid-template-columns:1fr}
-  .contact{padding:28px 22px}
+@media (max-width:980px){
+  nav.links{display:none;position:absolute;top:74px;left:0;right:0;flex-direction:column;gap:0;background:var(--paper);border-bottom:1px solid var(--line);padding:8px max(24px,env(safe-area-inset-left,0px)) 16px}
+  nav.links.open{display:flex}
+  nav.links a{padding:12px 0;font-size:17px}
+  .menu{display:grid}
+  header .talk{display:none}
+  .sculpt{opacity:.45;top:120px}
+  .hero-grid,.proj,.proj.flip,.about,.s-head{grid-template-columns:1fr}
+  .proj.flip .cover{order:0}
+  .services{grid-template-columns:1fr}.svc,.svc+.svc{padding:30px 0;border-right:0;border-bottom:1px solid var(--line)}
+  .facts{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .xrow{grid-template-columns:1fr;gap:6px}.xrow .badge{justify-self:start}
 }
-@media (max-width:520px){
-  .board{grid-template-columns:1fr 1fr}.board div:nth-child(2){border-right:0}.board div:nth-child(-n+2){border-bottom:1px solid var(--line)}
-  .feat{grid-template-columns:1fr}
-  .spec div{grid-template-columns:1fr;gap:4px}
-  .flow{grid-template-columns:1fr}
-  .t-hello{padding:26px 22px}
-  .side .foot{grid-template-columns:1fr}
+@media (max-width:620px){
+  .duo,.about .cols,.steps{grid-template-columns:1fr}
+  .name .l2{padding-left:0}
+  .sculpt{display:none}
+  .band .track{font-size:26px}
+  section.s{padding-top:90px}
+  .work{gap:60px}
 }
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.js .rv{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.js .rv,.js .name .w{opacity:1;transform:none}}
 </style>
 </head>
 <body>
 
-<aside class="side">
-  <div class="top">
-    <div class="seal" aria-hidden="true"><span>VK</span></div>
-    <div>
-      <h1>Varsha Kumari</h1>
-      <p class="role">.NET Full Stack Developer</p>
-    </div>
+<header id="hdr">
+  <div class="wrap">
+    <a class="logo" href="#top">Varsha<span>.</span></a>
+    <nav class="links" id="links"><a href="#about">About</a><a href="#services">What I do</a><a href="#work">Work</a><a href="#experience">Experience</a><a href="#contact">Contact</a></nav>
+    <a class="talk" href="#contact">Let's talk <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+    <button class="menu" id="menu" type="button" aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8h16M4 16h16"/></svg></button>
   </div>
-  <p class="blurb">I build eCommerce and internal systems with .NET Core, ASP.NET MVC, Web API, Angular and SQL Server.</p>
-  <span class="avail"><i></i>Realiser Labs · Pune</span>
-  <ul class="toc" id="toc">
-    <li><a href="#overview">Overview</a></li>
-    <li><a href="#work">Work</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#approach">Approach</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <div class="foot">
-    <div class="icons">
-      <a href="https://www.linkedin.com/in/vkvarsha/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C20.6 8.65 21 11.3 21 14.7V21h-4v-5.6c0-1.33-.02-3.05-1.86-3.05-1.86 0-2.14 1.45-2.14 2.95V21H9z"/></svg></a>
-      <a href="https://github.com/varshakumari-dev" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg></a>
-      <a href="mailto:vkvarsh31@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
-    </div>
-    <a class="cv" href="Varsha_Kumari_CV.pdf" download>Download CV <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l-5-5m5 5l5-5M5 21h14"/></svg></a>
-  </div>
-</aside>
+</header>
 
-<main>
-<div class="inner">
-
-  <section id="overview" style="padding-top:0">
-    <div class="bento">
-      <div class="tile t-hello rv">
-        <span class="orn" aria-hidden="true"></span>
-        <div class="kicker">Hello, I'm Varsha</div>
-        <h2>I build the systems behind a <em class="gold">US bullion store.</em></h2>
-        <p>For <b>1.6 years</b> I've worked for <b>BOLD Precious Metals</b>, on its customer-facing <b>eCommerce platform</b> and on <b>Cerebro</b>, the internal system the team uses to run it. I take each feature from the stored procedure all the way to the screen.</p>
+<main id="top">
+  <section class="hero">
+    <div class="sculpt" aria-hidden="true"><div class="shadow"></div><div class="ring"></div><div class="orb"></div></div>
+    <div class="wrap">
+      <div class="hero-top">
+        <span class="label">.NET Full Stack Developer — Pune, India</span>
+        <span class="avail"><i></i>Software Developer at Realiser Labs</span>
       </div>
-      <div class="tile t-now rv">
-        <div class="lab">Currently</div>
-        <h3>Software Developer</h3>
-        <p class="sm">Realiser Labs Pvt Ltd, Pune<br>Client: BOLD Precious Metals (USA)</p>
-      </div>
-      <div class="tile t-yrs rv">
-        <div class="lab">Experience</div>
-        <div><span class="big gold">1.6</span><small style="font:italic 400 22px var(--serif);color:var(--muted);margin-left:6px">years</small></div>
-        <p class="sm">Building live production software, end to end</p>
-      </div>
-      <div class="tile t-metal rv">
-        <div class="lab">What the store sells</div>
-        <div class="board" aria-label="Metals sold on BOLD Precious Metals">
-          <div style="--c:#d6b46a"><small>XAU</small><b>Gold</b><i></i></div>
-          <div style="--c:#c9ced6"><small>XAG</small><b>Silver</b><i></i></div>
-          <div style="--c:#9fb3c8"><small>XPT</small><b>Platinum</b><i></i></div>
-          <div style="--c:#b7a3c9"><small>XPD</small><b>Palladium</b><i></i></div>
+      <h1 class="name" id="name"><span class="w">Varsha</span><span class="l2"><span class="w d2">Kumari<span class="dot">.</span></span></span></h1>
+      <div class="hero-grid">
+        <p class="intro rv">I turn business needs into <em>reliable, fast</em> web applications.</p>
+        <div class="hero-side rv">
+          <p>For <b>1.6 years</b> I've built the <b>BOLD Precious Metals</b> eCommerce store and <b>Cerebro</b>, its internal management system, with .NET Core, ASP.NET MVC, Web API, Angular and SQL Server.</p>
+          <div class="cta">
+            <a class="btn fill" href="#work">View my work <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="btn line" href="Varsha_Kumari_CV.pdf" download>Download CV</a>
+          </div>
         </div>
-        <p class="note">Live prices on boldpreciousmetals.com ↗</p>
       </div>
-      <div class="tile t-edu rv">
-        <div class="lab">Education</div>
-        <h3>BCA</h3>
-        <p class="sm">Computer Applications<br>VKSU · 2021 – 2024</p>
+    </div>
+    <div class="band" aria-hidden="true">
+      <div class="track">
+        <span>Clean code</span><span><i>Reliable</i> systems</span><span>.NET Core</span><span>ASP.NET MVC</span><span>Web API</span><span>Angular</span><span>SQL Server</span><span>End to <i>end</i></span>
+        <span>Clean code</span><span><i>Reliable</i> systems</span><span>.NET Core</span><span>ASP.NET MVC</span><span>Web API</span><span>Angular</span><span>SQL Server</span><span>End to <i>end</i></span>
       </div>
     </div>
   </section>
 
-  <section id="work">
-    <div class="kicker rv">02 · Work</div>
-    <h2 class="rv">Selected <em>work</em></h2>
-    <p class="lead rv" style="margin-bottom:34px">Client and company systems, so the code is private. Here's what each one does and my part in it.</p>
-    <div class="work">
-      <article class="row rv">
-        <div class="meta"><b>Client project</b><span>eCommerce</span><span>Since Jul 2025</span></div>
+  <section class="s" id="about">
+    <div class="wrap">
+      <div class="about">
+        <div class="label rv"><b>01</b> — About</div>
         <div>
-          <h3><a href="https://www.boldpreciousmetals.com/" target="_blank" rel="noopener">BOLD Precious Metals ↗</a><span class="status">Live</span></h3>
-          <p>The online store of a US bullion dealer in Austin, Texas. I work across the .NET backend, the Web APIs, the SQL Server layer and the Angular front end.</p>
-          <ul class="feat"><li>Live spot prices &amp; charts</li><li>Catalog, cart &amp; checkout</li><li>Accounts &amp; order tracking</li><li>Buyback, storage &amp; IRA</li></ul>
-          <div class="stack"><span>.NET Core</span><span>Web API</span><span>Angular</span><span>SQL Server</span><span>EF · Dapper</span></div>
-        </div>
-      </article>
-      <article class="row rv">
-        <div class="meta"><b>Internal system</b><span>Back office</span><span>Since Jul 2025</span></div>
-        <div>
-          <h3>Cerebro<span class="status">In production</span></h3>
-          <p>The internal application the BOLD team uses to manage and run the eCommerce website behind the scenes. I build and maintain its features end to end, then unit test and deploy them to the testing servers.</p>
-          <div class="stack"><span>ASP.NET MVC</span><span>.NET Core</span><span>SQL Server</span><span>Stored procedures</span></div>
-        </div>
-      </article>
-      <article class="row rv">
-        <div class="meta"><b>Automation</b><span>Runs daily</span></div>
-        <div>
-          <h3>Daily Teams report</h3>
-          <p>A scheduled job that posts the Google Sheet report link to a Microsoft Teams channel every day, so nobody has to send it by hand.</p>
-          <div class="pipe"><span>Scheduled job</span><em>→</em><span>Google Sheet</span><em>→</em><span>Teams channel</span></div>
-        </div>
-      </article>
-      <article class="row rv">
-        <div class="meta"><b>AI integration</b><span>Claude · Gemini</span></div>
-        <div>
-          <h3>AI features in the app</h3>
-          <p>Connected Anthropic Claude and Google Gemini models to application features through C# services and REST APIs.</p>
-          <div class="stack"><span>C#</span><span>REST</span><span>Claude API</span><span>Gemini API</span></div>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <section id="skills">
-    <div class="kicker rv">03 · Skills</div>
-    <h2 class="rv">The <em>spec sheet</em></h2>
-    <dl class="spec rv">
-      <div><dt>Backend</dt><dd>C#, .NET Core, ASP.NET MVC, ASP.NET Web API, RESTful APIs</dd></div>
-      <div><dt>Frontend</dt><dd>Angular, TypeScript, HTML5, CSS3</dd></div>
-      <div><dt>Database</dt><dd>SQL Server, T-SQL, stored procedures</dd></div>
-      <div><dt>Data access</dt><dd>Entity Framework, Dapper, ADO.NET</dd></div>
-      <div><dt>AI &amp; integrations</dt><dd>Claude API, Gemini API, Microsoft Teams, Google Sheets</dd></div>
-      <div><dt>Delivery</dt><dd>Unit testing, debugging, test-server deployment, Postman, Git</dd></div>
-    </dl>
-  </section>
-
-  <section id="experience">
-    <div class="kicker rv">04 · Experience</div>
-    <h2 class="rv">Where I've <em>worked &amp; studied</em></h2>
-    <div class="xp">
-      <div class="job rv">
-        <div class="when">Jul 2025 —<br>Present</div>
-        <div>
-          <h3>Software Developer</h3>
-          <div class="where">Realiser Labs Pvt Ltd · Pune · Client: BOLD Precious Metals (USA)</div>
-          <ul>
-            <li>End-to-end feature development with .NET Core, ASP.NET MVC, Web API, C# and Angular.</li>
-            <li>SQL Server queries and stored procedures; data access with Entity Framework, Dapper and ADO.NET.</li>
-            <li>Unit testing, bug fixing and deployment on testing servers.</li>
-            <li>Integrated AI models (Claude and Gemini APIs) into application features.</li>
-            <li>Built a scheduled daily job that posts a Google Sheet report link to Microsoft Teams.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="job rv">
-        <div class="when">2021 —<br>2024</div>
-        <div>
-          <h3>Bachelor of Computer Applications</h3>
-          <div class="where" style="margin-bottom:0">Veer Kunwar Singh University</div>
+          <p class="quote rv">I'm Varsha, a developer who follows every feature <em>from the stored procedure to the screen</em> and cares how it feels to the people who use it.</p>
+          <div class="cols rv">
+            <p>I work at <b>Realiser Labs Pvt Ltd</b> on projects for the US client <b>BOLD Precious Metals</b>: the customer-facing online store for gold, silver and platinum bullion, and <b>Cerebro</b>, the internal application the team uses to run the website.</p>
+            <p>I own features end to end: SQL Server queries and stored procedures, Web APIs in .NET Core and ASP.NET MVC, Angular screens, then unit testing, bug fixing and deployment to testing servers. I've also added <b>AI features with Claude and Gemini</b>.</p>
+          </div>
+          <div class="facts rv">
+            <div class="fact"><big>1.6<em> yrs</em></big><span>Professional experience</span></div>
+            <div class="fact"><big>2</big><span>Production systems</span></div>
+            <div class="fact"><big><em>US</em></big><span>Client, BOLD Precious Metals</span></div>
+            <div class="fact"><big>BCA</big><span>Computer Applications</span></div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="approach">
-    <div class="kicker rv">05 · Approach</div>
-    <h2 class="rv">How a feature <em>gets made</em></h2>
-    <div class="flow rv">
-      <div><i>i.</i><b>Understand</b><span>Read the requirement and agree on what done looks like.</span></div>
-      <div><i>ii.</i><b>Data first</b><span>Tables, queries and stored procedures in SQL Server.</span></div>
-      <div><i>iii.</i><b>Build</b><span>Web API in .NET Core, screens in Angular or MVC.</span></div>
-      <div><i>iv.</i><b>Test &amp; fix</b><span>Unit tests, Postman checks, bug fixes.</span></div>
-      <div><i>v.</i><b>Deploy</b><span>Ship the build to the testing server.</span></div>
-    </div>
-  </section>
-
-  <section id="contact" style="padding-bottom:20px">
-    <div class="contact rv">
-      <div class="kicker">06 · Contact</div>
-      <h2>Let's <em>work together.</em></h2>
-      <a class="mail" id="email" href="mailto:vkvarsh31@gmail.com">vkvarsh31@gmail.com</a><button class="copy" id="copy" type="button">Copy</button>
-      <div class="reach">
-        <a href="tel:+917349860204"><small>Phone</small><span>+91 73498 60204</span></a>
-        <a href="https://www.linkedin.com/in/vkvarsha/" target="_blank" rel="noopener"><small>LinkedIn</small><span>in/vkvarsha ↗</span></a>
-        <a href="cv.html"><small>CV</small><span>View online ↗</span></a>
+  <section class="s" id="services">
+    <div class="wrap">
+      <div class="s-head">
+        <div class="label rv"><b>02</b> — What I do</div>
+        <div class="rv"><h2>Full stack, <em>start to finish.</em></h2></div>
+      </div>
+      <div class="services">
+        <div class="svc rv">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="13" width="18" height="7" rx="2"/><path d="M7 7.5h.01M7 16.5h.01"/></svg></div>
+          <h3>Backend &amp; APIs</h3>
+          <p>RESTful Web APIs and MVC applications in C# and .NET Core, built to be clean and maintainable.</p>
+          <div class="tags"><span>C#</span><span>.NET Core</span><span>ASP.NET MVC</span><span>Web API</span></div>
+        </div>
+        <div class="svc rv">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></div>
+          <h3>Data &amp; SQL</h3>
+          <p>SQL Server queries and stored procedures, with Entity Framework, Dapper and ADO.NET for fast data access.</p>
+          <div class="tags"><span>SQL Server</span><span>Stored procedures</span><span>EF</span><span>Dapper</span><span>ADO.NET</span></div>
+        </div>
+        <div class="svc rv">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18M8 21h8"/></svg></div>
+          <h3>Frontend &amp; delivery</h3>
+          <p>Angular screens in TypeScript, then unit testing, debugging and deployment to the testing server.</p>
+          <div class="tags"><span>Angular</span><span>TypeScript</span><span>Unit testing</span><span>Postman</span></div>
+        </div>
       </div>
     </div>
   </section>
 
-  <footer><span>© 2026 Varsha Kumari</span><span>Pune, India</span></footer>
-</div>
+  <section class="s" id="work">
+    <div class="wrap">
+      <div class="s-head">
+        <div class="label rv"><b>03</b> — Selected work</div>
+        <div class="rv"><h2>Things I <em>build &amp; run.</em></h2><p>Client and company systems, so the code is private. Here's what each one does and my part in it.</p></div>
+      </div>
+
+      <div class="work">
+        <article class="proj">
+          <a class="cover c-bold rv" href="https://www.boldpreciousmetals.com/" target="_blank" rel="noopener" aria-label="BOLD Precious Metals website">
+            <span class="brand">BOLD</span><span class="live"><i></i>LIVE · USA</span>
+            <div class="bars"><div class="bar au">Gold<small>XAU</small></div><div class="bar ag">Silver<small>XAG</small></div><div class="bar pt">Platinum<small>XPT</small></div><div class="bar pd">Palladium<small>XPD</small></div></div>
+          </a>
+          <div class="info rv">
+            <span class="label"><b>Client project</b> · eCommerce · 2025 – now</span>
+            <h3>BOLD Precious Metals</h3>
+            <p>The live online store of a US bullion dealer in Austin, Texas. I work across the .NET backend, the Web APIs, SQL Server and the Angular front end.</p>
+            <ul><li>Live spot prices and charts</li><li>Catalog, cart and secure checkout</li><li>Accounts, order history and tracking</li><li>Buyback, bullion storage and IRA</li></ul>
+            <a class="more" href="https://www.boldpreciousmetals.com/" target="_blank" rel="noopener">Visit the live site ↗</a>
+          </div>
+        </article>
+
+        <article class="proj flip">
+          <div class="cover c-cere rv" aria-hidden="true">
+            <span class="brand">Cerebro</span>
+            <div class="dash"><div class="sb"><i></i><i></i><i></i><i></i><i></i></div><div class="main"><div class="kpis"><div><b></b><span></span></div><div><b></b><span></span></div><div><b></b><span></span></div></div><div class="chart"><i style="height:55%"></i><i style="height:80%"></i><i style="height:45%"></i><i style="height:95%"></i><i style="height:65%"></i><i style="height:85%"></i><i style="height:50%"></i></div><div class="rows"><i></i><i></i><i></i></div></div></div>
+          </div>
+          <div class="info rv">
+            <span class="label"><b>Internal system</b> · Back office · 2025 – now</span>
+            <h3>Cerebro</h3>
+            <p>The internal application the BOLD team uses to manage and run the eCommerce website behind the scenes. I build and maintain its features end to end, unit test them and deploy to the testing servers.</p>
+            <div class="tags"><span>ASP.NET MVC</span><span>.NET Core</span><span>SQL Server</span><span>Stored procedures</span></div>
+          </div>
+        </article>
+
+        <div class="duo">
+          <article class="mini rv">
+            <div class="cover c-teams" aria-hidden="true"><span class="clock">daily</span><div class="flow"><span>Scheduled job</span><em>→</em><span>Google Sheet</span><em>→</em><span>Teams channel</span></div></div>
+            <span class="label"><b>Automation</b></span>
+            <h3 style="margin-top:8px">Daily Teams report</h3>
+            <p>A job that posts the Google Sheet report link to a Microsoft Teams channel every day, so nobody has to send it by hand.</p>
+          </article>
+          <article class="mini rv">
+            <div class="cover c-ai" aria-hidden="true"><div class="orbs"><i></i><i></i><i></i></div><span class="word">Claude <em>&amp;</em> Gemini</span></div>
+            <span class="label"><b>AI integration</b></span>
+            <h3 style="margin-top:8px">AI features in the app</h3>
+            <p>Connected Anthropic Claude and Google Gemini models to application features through C# services and REST APIs.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s" id="experience">
+    <div class="wrap">
+      <div class="s-head">
+        <div class="label rv"><b>04</b> — Experience</div>
+        <div class="rv"><h2>Where I've <em>grown.</em></h2></div>
+      </div>
+      <div class="xp rv">
+        <div class="xrow">
+          <div class="when">Jul 2025 — Present</div>
+          <div>
+            <h3>Software Developer</h3>
+            <div class="where">Realiser Labs Pvt Ltd · Pune · Client: BOLD Precious Metals (USA)</div>
+            <ul>
+              <li>End-to-end features with .NET Core, ASP.NET MVC, Web API, C# and Angular</li>
+              <li>SQL Server queries and stored procedures; EF, Dapper and ADO.NET</li>
+              <li>Unit testing, bug fixing and deployment on testing servers</li>
+              <li>AI features with Claude and Gemini; daily report automation to Microsoft Teams</li>
+            </ul>
+          </div>
+          <span class="badge">Current</span>
+        </div>
+        <div class="xrow">
+          <div class="when">2021 — 2024</div>
+          <div><h3>Bachelor of Computer Applications</h3><div class="where">Veer Kunwar Singh University</div></div>
+          <span class="badge">BCA</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s" id="approach">
+    <div class="wrap">
+      <div class="s-head">
+        <div class="label rv"><b>05</b> — Approach</div>
+        <div class="rv"><h2>How a feature <em>gets made.</em></h2></div>
+      </div>
+      <div class="steps">
+        <div class="step rv"><div class="n">i.</div><b>Understand</b><span>Read the requirement and agree on what done looks like.</span></div>
+        <div class="step rv"><div class="n">ii.</div><b>Data first</b><span>Tables, queries and stored procedures in SQL Server.</span></div>
+        <div class="step rv"><div class="n">iii.</div><b>Build</b><span>Web API in .NET Core, screens in Angular or MVC.</span></div>
+        <div class="step rv"><div class="n">iv.</div><b>Test &amp; fix</b><span>Unit tests, Postman checks and bug fixes.</span></div>
+        <div class="step rv"><div class="n">v.</div><b>Deploy</b><span>Ship the build to the testing server.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <span class="label rv"><b>06</b> — Contact</span>
+      <p class="big rv">Let's <em>talk.</em></p>
+      <a class="mail rv" id="email" href="mailto:vkvarsh31@gmail.com">vkvarsh31@gmail.com</a>
+      <div class="row rv">
+        <button class="copy" id="copy" type="button">Copy email</button>
+        <a class="btn line" href="tel:+917349860204">+91 73498 60204</a>
+        <a class="btn line" href="https://www.linkedin.com/in/vkvarsha/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn fill" href="Varsha_Kumari_CV.pdf" download>Download CV</a>
+      </div>
+    </div>
+  </section>
 </main>
+
+<div class="wrap"><footer><span>© 2026 Varsha Kumari</span><nav><a href="https://www.linkedin.com/in/vkvarsha/" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/varshakumari-dev" target="_blank" rel="noopener">GitHub</a><a href="cv.html">CV</a></nav><span>Pune, India</span></footer></div>
 
 <script>
 (function(){
   var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
   document.documentElement.classList.add('js');
+  var hdr=document.getElementById('hdr');
+  addEventListener('scroll',function(){hdr.classList.toggle('scrolled',scrollY>10)},{passive:true});
+  var links=document.getElementById('links'),menu=document.getElementById('menu');
+  menu.addEventListener('click',function(){var o=links.classList.toggle('open');menu.setAttribute('aria-expanded',o)});
+  links.addEventListener('click',function(e){if(e.target.tagName==='A'){links.classList.remove('open');menu.setAttribute('aria-expanded','false')}});
+  var nm=document.getElementById('name');
+  requestAnimationFrame(function(){setTimeout(function(){nm.classList.add('in')},80)});
   var rv=[].slice.call(document.querySelectorAll('.rv'));
-  if('IntersectionObserver' in window && !reduce){
-    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1,rootMargin:'0px 0px -30px 0px'});
-    rv.forEach(function(el,i){el.style.transitionDelay=(el.closest('.bento')?i*70:0)+'ms';io.observe(el)});
-    var toc=[].slice.call(document.querySelectorAll('#toc a'));
-    var io2=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)toc.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})})},{rootMargin:'-40% 0px -55% 0px'});
-    toc.forEach(function(a){var s=document.querySelector(a.getAttribute('href'));if(s)io2.observe(s)});
+  if('IntersectionObserver' in window&&!reduce){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+    rv.forEach(function(el){io.observe(el)});
   } else rv.forEach(function(el){el.classList.add('in')});
   document.getElementById('copy').addEventListener('click',function(){
     var b=this,t=document.getElementById('email').textContent;
     function sel(){var r=document.createRange();r.selectNodeContents(document.getElementById('email'));var s=getSelection();s.removeAllRanges();s.addRange(r)}
-    try{navigator.clipboard.writeText(t).then(function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy'},1500)},sel)}catch(e){sel()}
+    try{navigator.clipboard.writeText(t).then(function(){b.textContent='Copied ✓';setTimeout(function(){b.textContent='Copy email'},1500)},sel)}catch(e){sel()}
   });
 })();
 </script>
