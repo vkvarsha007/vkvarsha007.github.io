@@ -5,376 +5,425 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Varsha Kumari | .NET Full Stack Developer</title>
 <meta name="description" content="Varsha Kumari, .NET Full Stack Developer in Pune: .NET Core, ASP.NET MVC, Web API, Angular and SQL Server. Working on BOLD Precious Metals eCommerce and Cerebro.">
+<meta name="theme-color" content="#050a18">
 <meta property="og:title" content="Varsha Kumari | .NET Full Stack Developer">
 <meta property="og:description" content=".NET Core · ASP.NET MVC · Web API · Angular · SQL Server · Pune">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230b1f3a'/%3E%3Ctext x='16' y='21.5' text-anchor='middle' font-family='Arial' font-weight='700' font-size='14' fill='%2338bdf8'%3EVK%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%233b82f6'/%3E%3Cstop offset='1' stop-color='%2314b8a6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='9' fill='url(%23g)'/%3E%3Ctext x='16' y='21.5' text-anchor='middle' font-family='Arial' font-weight='800' font-size='13' fill='white'%3EVK%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
-<script>try{var t=localStorage.getItem('vk-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=JetBrains+Mono:wght@400;500;600&display=swap">
 <style>
-/* Layout: sticky top bar · split hero with an SSMS-style results card · stat strip · stacked sections on a 1080px column */
+/* Dark premium: deep-navy night sky, blue→teal→mint aurora, glass cards, one gradient accent used sparingly */
 :root{
-  --bg:#f6f8fb; --surface:#ffffff; --sunk:#eef2f7; --ink:#0b1f3a; --muted:#56657a; --line:#dde4ee;
-  --blue:#2563eb; --sky:#0ea5e9; --teal:#0d9488; --grid:#0b1f3a; --grid-ink:#dbe6f3; --grid-line:#1d3557;
-  --display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;
-  --body:"IBM Plex Sans",ui-sans-serif,system-ui,sans-serif;
-  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
-  --shadow:0 1px 2px rgba(11,31,58,.06),0 8px 24px -12px rgba(11,31,58,.18);
+  --bg:#050a18; --bg2:#081127; --glass:rgba(17,29,58,.55); --glass2:rgba(23,38,74,.6);
+  --stroke:rgba(148,178,230,.14); --stroke2:rgba(148,178,230,.28);
+  --ink:#eaf1ff; --muted:#93a4c3; --dim:#61739a;
+  --blue:#3b82f6; --sky:#38bdf8; --teal:#14b8a6; --mint:#34d399; --amber:#fbbf24; --rose:#fb7185;
+  --grad:linear-gradient(100deg,#60a5fa 0%,#38bdf8 35%,#2dd4bf 70%,#6ee7b7 100%);
+  --display:"Sora",ui-sans-serif,system-ui,sans-serif;
+  --body:"DM Sans",ui-sans-serif,system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+  color-scheme:dark;
 }
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --bg:#0b1120; --surface:#111a2e; --sunk:#0e1628; --ink:#e7eef8; --muted:#97a6bb; --line:#22304a;
-  --blue:#60a5fa; --sky:#38bdf8; --teal:#2dd4bf; --grid:#071021; --grid-ink:#dbe6f3; --grid-line:#1b2a44;
-  --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px -14px rgba(0,0,0,.6); color-scheme:dark}}
-:root[data-theme="dark"]{
-  --bg:#0b1120; --surface:#111a2e; --sunk:#0e1628; --ink:#e7eef8; --muted:#97a6bb; --line:#22304a;
-  --blue:#60a5fa; --sky:#38bdf8; --teal:#2dd4bf; --grid:#071021; --grid-ink:#dbe6f3; --grid-line:#1b2a44;
-  --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px -14px rgba(0,0,0,.6); color-scheme:dark}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:76px}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.65 var(--body);-webkit-font-smoothing:antialiased}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16.5px/1.65 var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
 a{color:inherit}
-.wrap{max-width:1080px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
-:focus-visible{outline:2px solid var(--sky);outline-offset:3px;border-radius:6px}
+::selection{background:#14b8a655}
+:focus-visible{outline:2px solid var(--sky);outline-offset:3px;border-radius:8px}
+.wrap{max-width:1140px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 
-/* progress + top bar */
-.progress{position:fixed;inset:0 0 auto;height:3px;z-index:60;background:linear-gradient(90deg,var(--blue),var(--teal));transform-origin:0 50%;transform:scaleX(0)}
-header.bar{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
-.bar .wrap{display:flex;align-items:center;gap:20px;height:64px}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:700 17px var(--display)}
-.brand i{display:grid;place-items:center;width:34px;height:34px;border-radius:9px;background:var(--ink);color:var(--bg);font:600 12px var(--mono);font-style:normal}
-nav.links{display:flex;gap:4px;margin-left:auto}
-nav.links a{text-decoration:none;font:500 14px var(--body);color:var(--muted);padding:8px 12px;border-radius:8px}
-nav.links a:hover,nav.links a.on{color:var(--ink);background:var(--sunk)}
-.tools{display:flex;gap:8px;align-items:center}
-.icon-btn{width:38px;height:38px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--ink);display:grid;place-items:center;cursor:pointer}
-.icon-btn svg{width:18px;height:18px}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:10px;font:600 14.5px var(--body);text-decoration:none;border:1px solid transparent;cursor:pointer;transition:transform .15s ease}
-.btn:hover{transform:translateY(-1px)}
-.btn.primary{background:var(--blue);color:#fff}
-:root[data-theme="dark"] .btn.primary{color:#04101f}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .btn.primary{color:#04101f}}
-.btn.ghost{background:var(--surface);border-color:var(--line);color:var(--ink)}
-.btn.small{padding:8px 14px;font-size:13.5px}
-.menu-btn{display:none}
+/* background: aurora blobs + faint grid */
+.sky{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none;background:radial-gradient(1200px 600px at 50% -10%,#0d1d44 0%,transparent 60%),var(--bg)}
+.sky::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(148,178,230,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(148,178,230,.05) 1px,transparent 1px);background-size:56px 56px;mask-image:radial-gradient(ellipse at 50% 0%,#000 30%,transparent 75%)}
+.blob{position:absolute;border-radius:50%;filter:blur(90px);opacity:.42;animation:float 22s ease-in-out infinite}
+.b1{width:520px;height:520px;background:#1d4ed8;top:-160px;left:-120px}
+.b2{width:460px;height:460px;background:#0d9488;top:28%;right:-160px;animation-delay:-7s}
+.b3{width:420px;height:420px;background:#0ea5e9;bottom:-180px;left:30%;animation-delay:-14s;opacity:.28}
+@keyframes float{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(60px,40px) scale(1.08)}66%{transform:translate(-40px,30px) scale(.95)}}
+
+.progress{position:fixed;inset:0 0 auto;height:3px;z-index:60;background:var(--grad);transform-origin:0 50%;transform:scaleX(0)}
+
+/* nav */
+.nav{position:fixed;top:max(14px,env(safe-area-inset-top,0px));left:50%;transform:translateX(-50%);z-index:50;width:min(1100px,calc(100% - 28px));display:flex;align-items:center;gap:14px;padding:10px 12px 10px 14px;border-radius:18px;background:rgba(8,16,36,.62);border:1px solid var(--stroke);backdrop-filter:blur(16px) saturate(1.4);box-shadow:0 10px 40px -20px #000}
+.mono{display:grid;place-items:center;width:38px;height:38px;border-radius:11px;background:var(--grad);color:#04121f;font:800 13px var(--display);letter-spacing:.02em}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:700 16px var(--display)}
+.links{display:flex;gap:2px;margin-left:auto}
+.links a{text-decoration:none;font:500 14px var(--body);color:var(--muted);padding:8px 13px;border-radius:10px;transition:color .2s,background .2s}
+.links a:hover,.links a.on{color:var(--ink);background:rgba(148,178,230,.1)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:12px;font:600 15px var(--body);text-decoration:none;border:1px solid transparent;cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s}
+.btn svg{width:17px;height:17px}
+.btn.primary{background:var(--grad);color:#03121e;box-shadow:0 8px 30px -10px #2dd4bf}
+.btn.primary:hover{transform:translateY(-2px);box-shadow:0 14px 40px -10px #2dd4bf}
+.btn.ghost{background:rgba(148,178,230,.06);border-color:var(--stroke2);color:var(--ink)}
+.btn.ghost:hover{background:rgba(148,178,230,.12);transform:translateY(-2px)}
+.btn.sm{padding:9px 15px;font-size:14px;border-radius:11px}
+.menu{display:none;margin-left:auto;width:40px;height:40px;border-radius:11px;border:1px solid var(--stroke2);background:transparent;color:var(--ink);place-items:center;cursor:pointer}
+.menu svg{width:20px;height:20px}
 
 /* hero */
-.hero{padding-block:72px 40px}
-.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
-.status{display:inline-flex;align-items:center;gap:10px;font:500 13px var(--mono);color:var(--muted);background:var(--surface);border:1px solid var(--line);padding:6px 12px;border-radius:999px}
-.status b{width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 4px color-mix(in srgb,#22c55e 22%,transparent)}
-h1{font:800 clamp(44px,7vw,78px)/.98 var(--display);letter-spacing:-.03em;margin:22px 0 14px;text-wrap:balance}
-h1 span{color:var(--blue)}
-.role{font:600 clamp(19px,2.4vw,24px)/1.3 var(--display);margin:0 0 16px}
-.role em{font-style:normal;color:var(--teal)}
-.lede{color:var(--muted);font-size:17px;max-width:54ch;margin:0 0 26px}
-.lede strong{color:var(--ink);font-weight:600}
-.cta{display:flex;flex-wrap:wrap;gap:10px}
+.hero{padding-block:150px 60px;position:relative}
+.hero .split{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.badge{display:inline-flex;align-items:center;gap:10px;padding:7px 14px 7px 10px;border-radius:999px;background:rgba(20,184,166,.1);border:1px solid rgba(45,212,191,.3);font:500 13px var(--mono);color:#9ff3e4}
+.badge i{width:8px;height:8px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 0 #34d39988;animation:ping 2s infinite}
+@keyframes ping{0%{box-shadow:0 0 0 0 #34d39988}80%,100%{box-shadow:0 0 0 10px #34d39900}}
+.hi{font:500 18px var(--mono);color:var(--muted);margin:26px 0 6px}
+h1{font:800 clamp(48px,8vw,92px)/.95 var(--display);letter-spacing:-.04em;margin:0 0 18px}
+.typed{font:600 clamp(19px,2.5vw,26px)/1.3 var(--display);margin:0 0 20px;min-height:1.3em}
+.typed .cur{display:inline-block;width:3px;height:1em;background:var(--teal);margin-left:4px;vertical-align:-3px;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.lede{color:var(--muted);font-size:17.5px;max-width:54ch;margin:0 0 30px}
+.lede b{color:var(--ink);font-weight:600}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.social{display:flex;gap:10px;margin-top:28px}
+.social a{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;border:1px solid var(--stroke2);background:rgba(148,178,230,.05);color:var(--muted);transition:all .2s}
+.social a:hover{color:var(--ink);border-color:var(--teal);transform:translateY(-3px)}
+.social svg{width:19px;height:19px}
 
-.ssms{background:var(--grid);border-radius:16px;box-shadow:var(--shadow);overflow:hidden;border:1px solid var(--grid-line);min-width:0}
-.ssms .top{display:flex;align-items:center;gap:8px;padding:12px 16px;border-bottom:1px solid var(--grid-line)}
-.ssms .top i{width:10px;height:10px;border-radius:50%;display:block}
-.ssms .top span{margin-left:auto;font:500 12px var(--mono);color:#7d8fa8}
-.ssms pre{margin:0;padding:16px 18px 6px;font:500 13.5px/1.7 var(--mono);color:var(--grid-ink);white-space:pre-wrap}
-.k{color:#7dd3fc}.s{color:#fbbf24}.c{color:#6b7f99}
-.tabs{display:flex;gap:2px;padding:0 18px;margin-top:10px;font:500 12px var(--mono)}
-.tabs span{padding:6px 12px;color:#7d8fa8;border-radius:6px 6px 0 0}
-.tabs span.on{background:#13284a;color:#e2e8f0}
-.result{overflow-x:auto;background:#0e1d38;border-top:1px solid var(--grid-line)}
-.result table{width:100%;border-collapse:collapse;font:400 13px var(--mono);color:var(--grid-ink)}
-.result th,.result td{padding:8px 10px;border-right:1px solid var(--grid-line);border-bottom:1px solid var(--grid-line);text-align:left}
-.result th:last-child,.result td:last-child{border-right:0}
-.result th{color:#7d8fa8;font-weight:500;background:#0b1830}
-.result td:first-child,.result th:first-child{color:#5b6f8c;width:28px;text-align:right}
-.result tr:hover td{background:#13284a}
-.ok{color:#34d399}
-.foot{display:flex;justify-content:space-between;padding:9px 16px;font:500 12px var(--mono);color:#7d8fa8;background:#0b1830}
+/* hero visual: orbit + SQL window */
+.visual{position:relative;min-width:0}
+.ring{position:absolute;inset:-40px;border-radius:50%;border:1px dashed rgba(148,178,230,.16);animation:spin 60s linear infinite}
+.ring.r2{inset:10px;animation-duration:40s;animation-direction:reverse;border-style:solid;border-color:rgba(45,212,191,.12)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.win{position:relative;border-radius:18px;background:linear-gradient(180deg,rgba(13,24,52,.92),rgba(8,15,34,.92));border:1px solid var(--stroke2);box-shadow:0 30px 80px -30px #000,0 0 0 1px rgba(255,255,255,.02) inset;overflow:hidden}
+.win .top{display:flex;align-items:center;gap:8px;padding:13px 16px;border-bottom:1px solid var(--stroke)}
+.win .top i{width:11px;height:11px;border-radius:50%}
+.win .top span{margin-left:auto;font:500 12px var(--mono);color:var(--dim)}
+.code{margin:0;padding:18px 20px 8px;font:500 14px/1.75 var(--mono);color:#cfdcf5;min-height:126px;white-space:pre-wrap}
+.k{color:#7dd3fc}.str{color:var(--amber)}.c{color:var(--dim)}
+.res{margin:6px 16px 0;border:1px solid var(--stroke);border-radius:10px;overflow:hidden;opacity:0;transform:translateY(6px);transition:all .5s ease}
+.res.show{opacity:1;transform:none}
+.res table{width:100%;border-collapse:collapse;font:400 12.5px var(--mono)}
+.res th,.res td{padding:8px 10px;text-align:left;border-bottom:1px solid var(--stroke)}
+.res th{color:var(--dim);font-weight:500;background:rgba(148,178,230,.05)}
+.res td{color:#dce7fb}
+.res tr:last-child td{border-bottom:0}
+.wfoot{display:flex;justify-content:space-between;padding:12px 16px;font:500 12px var(--mono);color:var(--dim)}
+.wfoot .ok{color:var(--mint);opacity:0;transition:opacity .4s}
+.wfoot .ok.show{opacity:1}
+.chipf{position:absolute;display:flex;align-items:center;gap:8px;padding:9px 13px;border-radius:12px;background:rgba(10,20,44,.85);border:1px solid var(--stroke2);font:600 12.5px var(--mono);backdrop-filter:blur(10px);box-shadow:0 12px 30px -12px #000;animation:bob 6s ease-in-out infinite}
+.chipf b{width:8px;height:8px;border-radius:50%}
+.cf1{top:-22px;right:18px}.cf2{bottom:72px;left:-34px;animation-delay:-2s}.cf3{bottom:-20px;right:40px;animation-delay:-4s}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
 
 /* stats */
-.stats{padding-block:8px 28px}
-.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.stat{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px 22px}
-.stat b{display:block;font:800 34px/1 var(--display);color:var(--ink)}
-.stat b small{font-size:18px;color:var(--blue)}
-.stat span{display:block;margin-top:8px;font-size:14px;color:var(--muted)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:70px}
+.stat{padding:24px;border-radius:18px;background:var(--glass);border:1px solid var(--stroke);backdrop-filter:blur(10px)}
+.stat b{display:block;font:800 40px/1 var(--display)}
+.stat span{display:block;margin-top:10px;color:var(--muted);font-size:14.5px}
 
-/* ticker */
-.ticker{border-block:1px solid var(--line);background:var(--surface);overflow:hidden}
-.track{display:flex;gap:14px;width:max-content;padding-block:14px;animation:slide 46s linear infinite}
-.track span{font:500 13px var(--mono);color:var(--muted);padding:6px 14px;border:1px solid var(--line);border-radius:8px;white-space:nowrap;background:var(--bg)}
+/* marquee */
+.marquee{margin-top:70px;border-block:1px solid var(--stroke);background:rgba(8,16,36,.5);overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.track{display:flex;gap:14px;width:max-content;padding-block:16px;animation:slide 50s linear infinite}
+.marquee:hover .track{animation-play-state:paused}
+.track span{display:inline-flex;align-items:center;gap:9px;font:500 13.5px var(--mono);color:#b8c6e0;padding:8px 16px;border:1px solid var(--stroke);border-radius:999px;background:rgba(148,178,230,.04);white-space:nowrap}
+.track span::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--teal)}
 @keyframes slide{to{transform:translateX(-50%)}}
-.ticker:hover .track{animation-play-state:paused}
 
 /* sections */
-section.block{padding-block:88px 24px}
-.eyebrow{display:flex;align-items:center;gap:10px;font:600 12px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--teal)}
-.eyebrow::before{content:"";width:28px;height:2px;background:var(--teal)}
-h2{font:800 clamp(30px,4.4vw,46px)/1.08 var(--display);letter-spacing:-.02em;margin:14px 0 12px;text-wrap:balance}
-h2 span{color:var(--blue)}
-.sub{color:var(--muted);max-width:62ch;margin:0 0 34px}
-h3{font:700 20px/1.3 var(--display);margin:0}
+section.s{padding-block:110px 10px}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font:600 12.5px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--teal)}
+.eyebrow::before{content:"";width:30px;height:1px;background:var(--teal)}
+h2{font:800 clamp(34px,5vw,56px)/1.04 var(--display);letter-spacing:-.035em;margin:16px 0 14px;text-wrap:balance}
+.sub{color:var(--muted);font-size:17px;max-width:60ch;margin:0 0 44px}
+h3{font:700 21px/1.3 var(--display);margin:0;letter-spacing:-.01em}
 p{margin:0 0 12px}
 
-.about{display:grid;grid-template-columns:1.5fr 1fr;gap:18px}
-.panel{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:28px;min-width:0}
-.panel p{color:var(--muted)}
-.panel p strong{color:var(--ink);font-weight:600}
-.side{display:grid;gap:18px}
-.side .panel{padding:22px 24px}
-.label{font:600 11.5px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.card{position:relative;border-radius:22px;background:var(--glass);border:1px solid var(--stroke);backdrop-filter:blur(12px);padding:30px;overflow:hidden;min-width:0;transition:border-color .3s,transform .3s}
+.card::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:radial-gradient(420px circle at var(--mx,-200px) var(--my,-200px),rgba(56,189,248,.12),transparent 45%);opacity:0;transition:opacity .3s}
+.card:hover{border-color:var(--stroke2)}
+.card:hover::after{opacity:1}
 
-.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.skill{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px}
-.skill header{display:flex;align-items:center;gap:10px;margin-bottom:14px}
-.skill header i{width:10px;height:10px;border-radius:3px;background:var(--c,var(--blue))}
+.about{display:grid;grid-template-columns:1.45fr 1fr;gap:20px}
+.about .card p{color:var(--muted);font-size:17px}
+.about .card p b{color:var(--ink);font-weight:600}
+.facts{display:grid;gap:20px}
+.fact{display:flex;gap:16px;align-items:flex-start}
+.ico{flex-shrink:0;width:46px;height:46px;border-radius:13px;display:grid;place-items:center;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.25);color:var(--sky)}
+.ico svg{width:22px;height:22px}
+.label{font:600 11.5px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin-bottom:4px}
+.fact p{margin:4px 0 0;color:var(--muted);font-size:15px}
+
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.skill header{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+.skill header div{display:flex;align-items:center;gap:12px}
+.skill .ico{width:40px;height:40px;border-radius:11px;color:var(--c);background:color-mix(in srgb,var(--c) 14%,transparent);border-color:color-mix(in srgb,var(--c) 35%,transparent)}
+.skill .ico svg{width:19px;height:19px}
+.num{font:500 12px var(--mono);color:var(--dim)}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
-.chip{font:500 12.5px var(--mono);padding:5px 10px;border-radius:7px;background:var(--sunk);color:var(--ink);border:1px solid var(--line)}
+.chip{font:500 13px var(--mono);padding:6px 12px;border-radius:9px;background:rgba(148,178,230,.07);border:1px solid var(--stroke);color:#d3def4}
 
-.work{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
-.proj{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:26px;display:flex;flex-direction:column;gap:14px;position:relative;overflow:hidden;min-width:0}
-.proj::before{content:"";position:absolute;inset:0 auto 0 0;width:5px;background:var(--c,var(--blue))}
-.proj.wide{grid-column:1/-1;display:grid;grid-template-columns:1.2fr 1fr;gap:28px}
-.proj .meta{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center}
-.tag{font:600 11.5px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--c,var(--blue))}
-.pill{font:600 11.5px var(--body);padding:4px 10px;border-radius:999px;color:var(--c,var(--blue));background:color-mix(in srgb,var(--c,var(--blue)) 13%,transparent)}
+.work{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.proj{display:flex;flex-direction:column;gap:14px}
+.proj .bar{position:absolute;inset:0 0 auto;height:3px;background:linear-gradient(90deg,var(--c),transparent)}
+.proj .meta{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.tag{font:600 12px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--c)}
+.pill{display:inline-flex;align-items:center;gap:7px;font:600 12px var(--body);padding:5px 11px;border-radius:999px;color:var(--c);background:color-mix(in srgb,var(--c) 12%,transparent);border:1px solid color-mix(in srgb,var(--c) 30%,transparent)}
+.pill i{width:6px;height:6px;border-radius:50%;background:var(--c)}
 .proj p{color:var(--muted);margin:0}
-ul.list{margin:0;padding:0;list-style:none;display:grid;gap:9px}
-ul.list li{position:relative;padding-left:22px;color:var(--muted)}
-ul.list li::before{content:"";position:absolute;left:2px;top:.62em;width:9px;height:9px;border-radius:2px;border:2px solid var(--c,var(--blue))}
-.spot{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;align-content:start}
-.spot div{border:1px solid var(--line);border-radius:12px;padding:14px;background:var(--bg)}
-.spot small{font:500 11.5px var(--mono);color:var(--muted)}
-.spot b{display:block;font:700 17px var(--display)}
-.flow{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
-.flow span{font:500 12.5px var(--mono);padding:8px 12px;border-radius:9px;border:1px dashed var(--c);color:var(--ink)}
+.feature{grid-column:1/-1;display:grid;grid-template-columns:1.15fr 1fr;gap:34px;padding:36px}
+.feature h3{font-size:30px}
+.ticks{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.ticks li{display:flex;gap:12px;color:#c3d0e8}
+.ticks li::before{content:"";flex-shrink:0;width:18px;height:18px;margin-top:3px;border-radius:6px;background:color-mix(in srgb,var(--c) 18%,transparent) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2338bdf8' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12l5 5 9-10'/%3E%3C/svg%3E") center/12px no-repeat}
+.metals{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-content:center}
+.metal{border-radius:16px;padding:20px;border:1px solid var(--stroke2);background:linear-gradient(145deg,var(--m1),var(--m2));position:relative;overflow:hidden}
+.metal::after{content:"";position:absolute;top:-60%;left:-30%;width:60%;height:220%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.18),transparent);transform:rotate(25deg);animation:shine 5s ease-in-out infinite}
+.metal:nth-child(2)::after{animation-delay:1.2s}.metal:nth-child(3)::after{animation-delay:2.4s}.metal:nth-child(4)::after{animation-delay:3.6s}
+@keyframes shine{0%,60%{left:-40%}100%{left:130%}}
+.metal small{font:600 12px var(--mono);color:rgba(255,255,255,.75)}
+.metal b{display:block;font:800 22px var(--display);color:#fff;margin-top:22px}
+.au{--m1:#b8860b;--m2:#5c4310}.ag{--m1:#8a94a6;--m2:#3b4252}.pt{--m1:#6b8299;--m2:#2c3b4d}.pd{--m1:#7c6f8f;--m2:#352d45}
+.flow{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:4px}
+.flow span{font:500 12.5px var(--mono);padding:9px 13px;border-radius:10px;border:1px dashed color-mix(in srgb,var(--c) 55%,transparent);background:color-mix(in srgb,var(--c) 8%,transparent)}
 .flow svg{width:18px;height:18px;color:var(--c)}
 
-.xp{display:grid;grid-template-columns:200px 1fr;gap:0 32px}
-.xp .when{font:500 14px var(--mono);color:var(--muted);padding-top:4px}
-.xp .item{border-left:2px solid var(--line);padding:0 0 40px 28px;position:relative}
-.xp .item::before{content:"";position:absolute;left:-8px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:3px solid var(--c,var(--blue))}
-.xp .item:last-child{padding-bottom:0}
-.xp .co{color:var(--muted);margin:4px 0 14px}
+.xp{position:relative;display:grid;gap:22px;padding-left:34px}
+.xp::before{content:"";position:absolute;left:8px;top:8px;bottom:8px;width:2px;background:linear-gradient(180deg,var(--sky),var(--teal),transparent)}
+.xpi{position:relative}
+.xpi::before{content:"";position:absolute;left:-34px;top:34px;width:18px;height:18px;border-radius:50%;background:var(--bg);border:4px solid var(--c);box-shadow:0 0 18px var(--c)}
+.xpi .head{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline}
+.when{font:600 13px var(--mono);color:var(--c);padding:5px 11px;border-radius:999px;background:color-mix(in srgb,var(--c) 12%,transparent)}
+.co{color:var(--muted);margin:6px 0 18px}
 
-.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;counter-reset:s}
-.step{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;counter-increment:s}
-.step::before{content:counter(s,decimal-leading-zero);display:block;font:600 13px var(--mono);color:var(--teal);margin-bottom:10px}
-.step b{display:block;font:700 16px var(--display);margin-bottom:6px}
-.step span{font-size:14px;color:var(--muted)}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;position:relative}
+.step{padding:24px 20px}
+.step .n{font:700 34px var(--display);line-height:1;margin-bottom:16px}
+.step b{display:block;font:700 17px var(--display);margin-bottom:8px}
+.step span{color:var(--muted);font-size:14.5px}
 
-.contact{background:var(--grid);color:#e7eef8;border-radius:22px;padding:44px;display:grid;grid-template-columns:1.2fr 1fr;gap:32px;align-items:center}
-.contact h2{color:#fff}.contact h2 span{color:#38bdf8}
-.contact p{color:#a9b8cc}
-.lines{display:grid;gap:10px}
-.line{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;border-radius:12px;background:#12233f;border:1px solid #1f3558;text-decoration:none;color:#e7eef8;font:500 14.5px var(--mono);min-width:0}
-.line small{display:block;font:500 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:#7d8fa8}
-.line .v{overflow-wrap:anywhere}
-.copy{background:none;border:1px solid #2a4470;color:#cfe0f5;border-radius:8px;padding:6px 10px;font:500 12px var(--mono);cursor:pointer;flex-shrink:0}
-.contact .btn.primary{background:#38bdf8;color:#04101f}
+.contact{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;padding:50px;background:linear-gradient(135deg,rgba(29,78,216,.25),rgba(13,148,136,.18)),var(--glass);border-color:var(--stroke2)}
+.contact h2{margin-top:12px}
+.lines{display:grid;gap:12px;align-content:center}
+.line{display:flex;align-items:center;gap:14px;padding:15px 16px;border-radius:14px;background:rgba(5,10,24,.5);border:1px solid var(--stroke);text-decoration:none;transition:border-color .2s,transform .2s;min-width:0}
+.line:hover{border-color:var(--teal);transform:translateX(4px)}
+.line .ico{width:40px;height:40px}
+.line .ico svg{width:19px;height:19px}
+.line div{min-width:0;flex:1}
+.line small{display:block;font:600 11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+.line span.v{font:500 15px var(--mono);overflow-wrap:anywhere}
+.copy{flex-shrink:0;background:rgba(148,178,230,.08);border:1px solid var(--stroke2);color:var(--ink);border-radius:9px;padding:7px 12px;font:600 12px var(--mono);cursor:pointer}
 
-footer{padding-block:40px 56px;color:var(--muted);font:500 13px var(--mono);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-.top-btn{position:fixed;right:max(20px,env(safe-area-inset-right,0px));bottom:max(20px,env(safe-area-inset-bottom,0px));width:46px;height:46px;border-radius:50%;border:0;background:var(--blue);color:#fff;display:grid;place-items:center;cursor:pointer;box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:opacity .2s}
-.top-btn.show{opacity:1;pointer-events:auto}
-.top-btn svg{width:20px;height:20px}
+footer{padding-block:60px 50px;color:var(--dim);font:500 13px var(--mono);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px solid var(--stroke);margin-top:90px}
+.totop{position:fixed;right:max(20px,env(safe-area-inset-right,0px));bottom:max(20px,env(safe-area-inset-bottom,0px));width:48px;height:48px;border-radius:14px;border:0;background:var(--grad);color:#03121e;display:grid;place-items:center;cursor:pointer;box-shadow:0 10px 30px -8px #2dd4bf;opacity:0;pointer-events:none;transform:translateY(10px);transition:all .25s;z-index:40}
+.totop.show{opacity:1;pointer-events:auto;transform:none}
+.totop svg{width:20px;height:20px}
 
-@media (max-width:920px){
-  nav.links{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;background:var(--surface);border-bottom:1px solid var(--line);padding:10px max(20px,env(safe-area-inset-left,0px))}
-  nav.links.open{display:flex}
-  .menu-btn{display:grid;margin-left:auto}
-  .tools{margin-left:0}
-  .hero .wrap,.about,.proj.wide,.contact{grid-template-columns:1fr}
+/* reveal (only when JS is running) */
+.js .reveal{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.js .reveal.in{opacity:1;transform:none}
+
+@media (max-width:960px){
+  .links{display:none;position:absolute;top:calc(100% + 8px);left:0;right:0;flex-direction:column;padding:10px;border-radius:16px;background:rgba(8,16,36,.96);border:1px solid var(--stroke)}
+  .links.open{display:flex}
+  .menu{display:grid}
+  .nav .btn{display:none}
+  .hero .split,.about,.feature,.contact{grid-template-columns:1fr}
+  .visual{margin-top:30px}
   .skills{grid-template-columns:1fr 1fr}
+  .stats{grid-template-columns:1fr 1fr}
   .steps{grid-template-columns:1fr 1fr}
-  .stats .wrap{grid-template-columns:1fr 1fr}
 }
-@media (max-width:600px){
-  .hero{padding-top:44px}
-  .work,.skills,.steps{grid-template-columns:1fr}
-  .xp{grid-template-columns:1fr}.xp .when{padding:0 0 6px 28px}
+@media (max-width:620px){
+  .hero{padding-top:120px}
+  .skills,.work,.steps{grid-template-columns:1fr}
+  .card,.feature{padding:24px}
   .contact{padding:28px 22px}
-  .tools .btn{display:none}
+  .cf2{left:-6px}.ring{display:none}
+  .stat b{font-size:32px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .reveal{opacity:1;transform:none}
 }
 </style>
 </head>
 <body>
+<div class="sky" aria-hidden="true"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div>
 <div class="progress" id="progress"></div>
 
-<header class="bar">
-  <div class="wrap">
-    <a class="brand" href="#top"><i>VK</i>Varsha Kumari</a>
-    <nav class="links" id="nav">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#work">Work</a>
-      <a href="#experience">Experience</a>
-      <a href="#process">How I work</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <button class="icon-btn menu-btn" id="menu" type="button" aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
-    <div class="tools">
-      <button class="icon-btn" id="theme" type="button" aria-label="Switch light or dark theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
-      <a class="btn primary small" href="Varsha_Kumari_CV.pdf" download>Download CV</a>
-    </div>
-  </div>
+<header class="nav">
+  <a class="brand" href="#top"><span class="mono">VK</span>Varsha Kumari</a>
+  <nav class="links" id="links">
+    <a href="#about">About</a><a href="#skills">Skills</a><a href="#work">Work</a><a href="#experience">Experience</a><a href="#process">Process</a><a href="#contact">Contact</a>
+  </nav>
+  <a class="btn primary sm" href="Varsha_Kumari_CV.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l-5-5m5 5l5-5M5 21h14"/></svg>Resume</a>
+  <button class="menu" id="menu" type="button" aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
 </header>
 
 <main id="top">
   <section class="hero">
-    <div class="wrap">
+    <div class="wrap split">
       <div>
-        <span class="status"><b></b>Software Developer at Realiser Labs · Pune</span>
-        <h1>Varsha <span>Kumari</span></h1>
-        <p class="role">.NET Full Stack Developer <em>· eCommerce &amp; internal tools</em></p>
-        <p class="lede">I build web applications end to end with <strong>.NET Core, ASP.NET MVC, Web API, Angular and SQL Server</strong>. For the last 1.6 years I have worked for the US client <strong>BOLD Precious Metals</strong>, on its online store and on <strong>Cerebro</strong>, the system the team uses to run it.</p>
+        <span class="badge"><i></i>Software Developer @ Realiser Labs · Pune</span>
+        <p class="hi">Hello, I'm</p>
+        <h1><span class="grad">Varsha</span><br>Kumari</h1>
+        <p class="typed" aria-label=".NET Full Stack Developer"><span id="typed">.NET Full Stack Developer</span><span class="cur"></span></p>
+        <p class="lede">I build web applications end to end with <b>.NET Core, ASP.NET MVC, Web API, Angular</b> and <b>SQL Server</b>. For the last <b>1.6 years</b> I have worked for the US client <b>BOLD Precious Metals</b>, on its online store and on <b>Cerebro</b>, the system the team uses to run it.</p>
         <div class="cta">
-          <a class="btn primary" href="#work">See my work</a>
+          <a class="btn primary" href="#work">Explore my work <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           <a class="btn ghost" href="Varsha_Kumari_CV.pdf" download>Download CV</a>
-          <a class="btn ghost" href="#contact">Contact me</a>
+          <a class="btn ghost" href="#contact">Let's talk</a>
+        </div>
+        <div class="social">
+          <a href="https://www.linkedin.com/in/vkvarsha/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C20.6 8.65 21 11.3 21 14.7V21h-4v-5.6c0-1.33-.02-3.05-1.86-3.05-1.86 0-2.14 1.45-2.14 2.95V21H9z"/></svg></a>
+          <a href="https://github.com/varshakumari-dev" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg></a>
+          <a href="mailto:vkvarsh31@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
         </div>
       </div>
 
-      <div class="ssms" aria-label="A SQL query that returns Varsha's profile">
-        <div class="top"><i style="background:#f87171"></i><i style="background:#fbbf24"></i><i style="background:#34d399"></i><span>SQLQuery1.sql · RealiserLabs</span></div>
-<pre><span class="k">SELECT</span> Name, Role, Stack
+      <div class="visual" aria-label="A SQL query that returns Varsha's profile">
+        <div class="ring"></div><div class="ring r2"></div>
+        <div class="win">
+          <div class="top"><i style="background:#f87171"></i><i style="background:#fbbf24"></i><i style="background:#34d399"></i><span>SQLQuery1.sql — RealiserLabs</span></div>
+          <pre class="code" id="code"><span class="k">SELECT</span> Name, Role, Stack
 <span class="k">FROM</span>   dbo.Developers
-<span class="k">WHERE</span>  Name = <span class="s">'Varsha Kumari'</span>;</pre>
-        <div class="tabs"><span class="on">Results</span><span>Messages</span></div>
-        <div class="result">
-          <table>
-            <tr><th></th><th>Name</th><th>Role</th><th>Stack</th></tr>
-            <tr><td>1</td><td>Varsha Kumari</td><td>.NET Full Stack</td><td>.NET Core + Angular</td></tr>
-          </table>
+<span class="k">WHERE</span>  Name = <span class="str">'Varsha Kumari'</span>;</pre>
+          <div class="res show" id="res">
+            <table>
+              <tr><th>Name</th><th>Role</th><th>Stack</th></tr>
+              <tr><td>Varsha Kumari</td><td>.NET Full Stack</td><td>.NET Core + Angular</td></tr>
+            </table>
+          </div>
+          <div class="wfoot"><span class="ok show" id="ok">✓ Query executed successfully</span><span>1 row · 0.01s</span></div>
         </div>
-        <div class="foot"><span class="ok">✓ Query executed successfully</span><span>1 row</span></div>
+        <div class="chipf cf1"><b style="background:#a78bfa"></b>C# · .NET Core</div>
+        <div class="chipf cf2"><b style="background:#f87171"></b>Angular</div>
+        <div class="chipf cf3"><b style="background:#38bdf8"></b>SQL Server</div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="stats">
+        <div class="stat card reveal"><b class="grad" data-count="1.6" data-dec="1">1.6</b><span>Years of professional experience</span></div>
+        <div class="stat card reveal"><b class="grad" data-count="2">2</b><span>Production systems: BOLD store &amp; Cerebro</span></div>
+        <div class="stat card reveal"><b class="grad" data-count="1">1</b><span>US client, BOLD Precious Metals</span></div>
+        <div class="stat card reveal"><b class="grad">BCA</b><span>Computer Applications, 2021 – 2024</span></div>
+      </div>
+    </div>
+
+    <div class="marquee" aria-label="Technologies">
+      <div class="track">
+        <span>C#</span><span>.NET Core</span><span>ASP.NET MVC</span><span>Web API</span><span>RESTful APIs</span><span>Angular</span><span>TypeScript</span><span>SQL Server</span><span>Stored Procedures</span><span>Entity Framework</span><span>Dapper</span><span>ADO.NET</span><span>Postman</span><span>Claude API</span><span>Gemini API</span><span>Microsoft Teams</span><span>Unit Testing</span><span>Git</span>
+        <span aria-hidden="true">C#</span><span aria-hidden="true">.NET Core</span><span aria-hidden="true">ASP.NET MVC</span><span aria-hidden="true">Web API</span><span aria-hidden="true">RESTful APIs</span><span aria-hidden="true">Angular</span><span aria-hidden="true">TypeScript</span><span aria-hidden="true">SQL Server</span><span aria-hidden="true">Stored Procedures</span><span aria-hidden="true">Entity Framework</span><span aria-hidden="true">Dapper</span><span aria-hidden="true">ADO.NET</span><span aria-hidden="true">Postman</span><span aria-hidden="true">Claude API</span><span aria-hidden="true">Gemini API</span><span aria-hidden="true">Microsoft Teams</span><span aria-hidden="true">Unit Testing</span><span aria-hidden="true">Git</span>
       </div>
     </div>
   </section>
 
-  <section class="stats" aria-label="At a glance">
+  <section class="s" id="about">
     <div class="wrap">
-      <div class="stat"><b>1.6<small> yrs</small></b><span>Professional experience</span></div>
-      <div class="stat"><b>2</b><span>Production systems: BOLD store and Cerebro</span></div>
-      <div class="stat"><b>1</b><span>US client, BOLD Precious Metals</span></div>
-      <div class="stat"><b>BCA</b><span>Computer Applications, 2021 – 2024</span></div>
-    </div>
-  </section>
-
-  <div class="ticker" aria-label="Technologies">
-    <div class="track">
-      <span>C#</span><span>.NET Core</span><span>ASP.NET MVC</span><span>Web API</span><span>RESTful APIs</span><span>Angular</span><span>TypeScript</span><span>SQL Server</span><span>Stored Procedures</span><span>Entity Framework</span><span>Dapper</span><span>ADO.NET</span><span>Postman</span><span>Claude API</span><span>Gemini API</span><span>Microsoft Teams</span><span>Unit Testing</span><span>Git</span>
-      <span aria-hidden="true">C#</span><span aria-hidden="true">.NET Core</span><span aria-hidden="true">ASP.NET MVC</span><span aria-hidden="true">Web API</span><span aria-hidden="true">RESTful APIs</span><span aria-hidden="true">Angular</span><span aria-hidden="true">TypeScript</span><span aria-hidden="true">SQL Server</span><span aria-hidden="true">Stored Procedures</span><span aria-hidden="true">Entity Framework</span><span aria-hidden="true">Dapper</span><span aria-hidden="true">ADO.NET</span><span aria-hidden="true">Postman</span><span aria-hidden="true">Claude API</span><span aria-hidden="true">Gemini API</span><span aria-hidden="true">Microsoft Teams</span><span aria-hidden="true">Unit Testing</span><span aria-hidden="true">Git</span>
-    </div>
-  </div>
-
-  <section class="block" id="about">
-    <div class="wrap">
-      <div class="eyebrow">About</div>
-      <h2>From the stored procedure <span>to the screen.</span></h2>
-      <div class="about">
-        <div class="panel">
-          <p>I'm a <strong>.NET Full Stack Developer</strong> with <strong>1.6 years</strong> of professional experience. At <strong>Realiser Labs Pvt Ltd</strong> I work on projects for the US client <strong>BOLD Precious Metals</strong>: the customer-facing <strong>eCommerce platform</strong> that sells gold, silver and platinum bullion, and <strong>Cerebro</strong>, the internal application the team uses to manage and run the website.</p>
+      <div class="reveal"><span class="eyebrow">About me</span>
+      <h2>From the stored procedure<br><span class="grad">to the screen.</span></h2></div>
+      <div class="about" style="margin-top:40px">
+        <div class="card reveal">
+          <p>I'm a <b>.NET Full Stack Developer</b> with <b>1.6 years</b> of professional experience. At <b>Realiser Labs Pvt Ltd</b> I work on projects for the US client <b>BOLD Precious Metals</b>: the customer-facing <b>eCommerce platform</b> that sells gold, silver and platinum bullion, and <b>Cerebro</b>, the internal application the team uses to manage and run the website.</p>
           <p>I own features end to end. I write the SQL Server queries and stored procedures, build the APIs in .NET Core and ASP.NET MVC, create the Angular screens, then unit test, fix bugs and deploy to the testing servers.</p>
-          <p>Along the way I have added <strong>AI features with Claude and Gemini</strong> and automated a <strong>daily report that posts itself to Microsoft Teams</strong>. I care about clean, maintainable code and applications that stay fast.</p>
+          <p style="margin:0">I have also added <b>AI features with Claude and Gemini</b> and automated a <b>daily report that posts itself to Microsoft Teams</b>. I care about clean, maintainable code and applications that stay fast.</p>
         </div>
-        <div class="side">
-          <div class="panel"><div class="label">Currently</div><h3>Realiser Labs Pvt Ltd</h3><p style="margin:6px 0 0">Software Developer · Client: BOLD Precious Metals (USA)</p></div>
-          <div class="panel"><div class="label">Education</div><h3>Bachelor of Computer Applications</h3><p style="margin:6px 0 0">Veer Kunwar Singh University · 2021 – 2024</p></div>
-          <div class="panel"><div class="label">Based in</div><h3>Pune, India</h3><p style="margin:6px 0 0">Available for .NET full stack roles</p></div>
+        <div class="card facts reveal">
+          <div class="fact"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></span><div><div class="label">Currently</div><h3>Realiser Labs Pvt Ltd</h3><p>Software Developer · Client: BOLD Precious Metals (USA)</p></div></div>
+          <div class="fact"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></span><div><div class="label">Education</div><h3>BCA, Computer Applications</h3><p>Veer Kunwar Singh University · 2021 – 2024</p></div></div>
+          <div class="fact"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11a7 7 0 1 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span><div><div class="label">Based in</div><h3>Pune, India</h3><p>Open to .NET full stack roles</p></div></div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="block" id="skills">
+  <section class="s" id="skills">
     <div class="wrap">
-      <div class="eyebrow">Skills</div>
-      <h2>What I use <span>every day.</span></h2>
-      <p class="sub">Grouped by where each tool sits in the applications I build.</p>
+      <div class="reveal"><span class="eyebrow">Skills</span>
+      <h2>My toolkit, <span class="grad">layer by layer.</span></h2>
+      <p class="sub">Everything I use day to day, grouped by where it sits in the applications I build.</p></div>
       <div class="skills">
-        <div class="skill" style="--c:var(--blue)"><header><i></i><h3>Backend</h3></header><div class="chips"><span class="chip">C#</span><span class="chip">.NET Core</span><span class="chip">ASP.NET MVC</span><span class="chip">Web API</span><span class="chip">RESTful APIs</span></div></div>
-        <div class="skill" style="--c:#dd0031"><header><i></i><h3>Frontend</h3></header><div class="chips"><span class="chip">Angular</span><span class="chip">TypeScript</span><span class="chip">HTML5</span><span class="chip">CSS3</span></div></div>
-        <div class="skill" style="--c:#cc2927"><header><i></i><h3>Database</h3></header><div class="chips"><span class="chip">SQL Server</span><span class="chip">Stored Procedures</span><span class="chip">T-SQL</span><span class="chip">Entity Framework</span><span class="chip">Dapper</span><span class="chip">ADO.NET</span></div></div>
-        <div class="skill" style="--c:var(--teal)"><header><i></i><h3>AI &amp; integrations</h3></header><div class="chips"><span class="chip">Claude API</span><span class="chip">Gemini API</span><span class="chip">Microsoft Teams</span><span class="chip">Google Sheets</span></div></div>
-        <div class="skill" style="--c:#7c3aed"><header><i></i><h3>Testing &amp; delivery</h3></header><div class="chips"><span class="chip">Unit Testing</span><span class="chip">Debugging</span><span class="chip">Test-server deployment</span></div></div>
-        <div class="skill" style="--c:#475569"><header><i></i><h3>Tools</h3></header><div class="chips"><span class="chip">Postman</span><span class="chip">Git</span><span class="chip">GitHub</span></div></div>
+        <div class="card skill reveal" style="--c:#60a5fa"><header><div><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="13" width="18" height="7" rx="2"/><path d="M7 7.5h.01M7 16.5h.01"/></svg></span><h3>Backend</h3></div><span class="num">01</span></header><div class="chips"><span class="chip">C#</span><span class="chip">.NET Core</span><span class="chip">ASP.NET MVC</span><span class="chip">Web API</span><span class="chip">RESTful APIs</span></div></div>
+        <div class="card skill reveal" style="--c:#fb7185"><header><div><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18M8 21h8"/></svg></span><h3>Frontend</h3></div><span class="num">02</span></header><div class="chips"><span class="chip">Angular</span><span class="chip">TypeScript</span><span class="chip">HTML5</span><span class="chip">CSS3</span></div></div>
+        <div class="card skill reveal" style="--c:#fbbf24"><header><div><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></span><h3>Database</h3></div><span class="num">03</span></header><div class="chips"><span class="chip">SQL Server</span><span class="chip">Stored Procedures</span><span class="chip">T-SQL</span><span class="chip">Entity Framework</span><span class="chip">Dapper</span><span class="chip">ADO.NET</span></div></div>
+        <div class="card skill reveal" style="--c:#2dd4bf"><header><div><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.6L18 9l-4.2 1.6L12 15l-1.8-4.4L6 9l4.2-1.4z"/><path d="M19 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/></svg></span><h3>AI &amp; integrations</h3></div><span class="num">04</span></header><div class="chips"><span class="chip">Claude API</span><span class="chip">Gemini API</span><span class="chip">Microsoft Teams</span><span class="chip">Google Sheets</span></div></div>
+        <div class="card skill reveal" style="--c:#a78bfa"><header><div><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></svg></span><h3>Testing &amp; delivery</h3></div><span class="num">05</span></header><div class="chips"><span class="chip">Unit Testing</span><span class="chip">Debugging</span><span class="chip">Test-server deployment</span></div></div>
+        <div class="card skill reveal" style="--c:#94a3b8"><header><div><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.4-.6-.6-2.4z"/></svg></span><h3>Tools</h3></div><span class="num">06</span></header><div class="chips"><span class="chip">Postman</span><span class="chip">Git</span><span class="chip">GitHub</span></div></div>
       </div>
     </div>
   </section>
 
-  <section class="block" id="work">
+  <section class="s" id="work">
     <div class="wrap">
-      <div class="eyebrow">Work</div>
-      <h2>Systems I build <span>and run.</span></h2>
-      <p class="sub">Client and company projects, so the source code is private. Here is what each one does and my part in it.</p>
+      <div class="reveal"><span class="eyebrow">Work</span>
+      <h2>Systems I build <span class="grad">and run.</span></h2>
+      <p class="sub">Client and company projects, so the code is private. Here is what each one does and my part in it.</p></div>
       <div class="work">
-        <article class="proj wide" style="--c:var(--blue)">
-          <div style="display:grid;gap:14px;align-content:start">
-            <div class="meta"><span class="tag">Client · eCommerce</span><span class="pill">Live · US client</span></div>
-            <h3 style="font-size:26px">BOLD Precious Metals</h3>
-            <p>The online store of a US dealer in Austin, Texas that sells gold, silver, platinum and palladium bullion, coins and jewelry. I work across the .NET backend, the APIs, the SQL Server layer and the Angular front end.</p>
-            <ul class="list">
+        <article class="card proj feature reveal" style="--c:#38bdf8">
+          <span class="bar"></span>
+          <div style="display:grid;gap:16px;align-content:start">
+            <div class="meta"><span class="tag">Client · eCommerce</span><span class="pill"><i></i>Live · US client</span></div>
+            <h3>BOLD Precious Metals</h3>
+            <p>The online store of a US bullion dealer in Austin, Texas. I work across the .NET backend, the APIs, the SQL Server layer and the Angular front end.</p>
+            <ul class="ticks">
               <li>Live spot-price ticker and price charts</li>
               <li>Product catalog, cart and secure checkout</li>
               <li>Customer accounts, order history and tracking</li>
               <li>Sell To Us buyback, bullion storage and precious-metals IRA</li>
             </ul>
             <div class="chips"><span class="chip">.NET Core</span><span class="chip">Web API</span><span class="chip">Angular</span><span class="chip">SQL Server</span><span class="chip">EF · Dapper</span></div>
-            <div><a class="btn ghost small" href="https://www.boldpreciousmetals.com/" target="_blank" rel="noopener">Visit the live site ↗</a></div>
+            <div><a class="btn ghost sm" href="https://www.boldpreciousmetals.com/" target="_blank" rel="noopener">Visit the live site ↗</a></div>
           </div>
-          <div class="spot" aria-label="Metals sold on the platform">
-            <div><small>XAU</small><b>Gold</b></div>
-            <div><small>XAG</small><b>Silver</b></div>
-            <div><small>XPT</small><b>Platinum</b></div>
-            <div><small>XPD</small><b>Palladium</b></div>
+          <div class="metals" aria-label="Metals sold on the platform">
+            <div class="metal au"><small>XAU</small><b>Gold</b></div>
+            <div class="metal ag"><small>XAG</small><b>Silver</b></div>
+            <div class="metal pt"><small>XPT</small><b>Platinum</b></div>
+            <div class="metal pd"><small>XPD</small><b>Palladium</b></div>
           </div>
         </article>
 
-        <article class="proj" style="--c:var(--teal)">
-          <div class="meta"><span class="tag">Internal system</span><span class="pill">In production</span></div>
+        <article class="card proj reveal" style="--c:#2dd4bf">
+          <span class="bar"></span>
+          <div class="meta"><span class="tag">Internal system</span><span class="pill"><i></i>In production</span></div>
           <h3>Cerebro</h3>
           <p>The internal application the BOLD team uses to manage and run the eCommerce website behind the scenes. I build and maintain its features end to end, then unit test and deploy them to the testing servers.</p>
           <div class="chips"><span class="chip">ASP.NET MVC</span><span class="chip">.NET Core</span><span class="chip">SQL Server</span><span class="chip">Stored procedures</span></div>
         </article>
 
-        <article class="proj" style="--c:#7c3aed">
-          <div class="meta"><span class="tag">Automation</span><span class="pill">Runs daily</span></div>
+        <article class="card proj reveal" style="--c:#a78bfa">
+          <span class="bar"></span>
+          <div class="meta"><span class="tag">Automation</span><span class="pill"><i></i>Runs daily</span></div>
           <h3>Daily Teams report</h3>
           <p>A scheduled job that runs every day and posts the Google Sheet report link to a Microsoft Teams channel, so nobody has to send it by hand.</p>
           <div class="flow" aria-label="Scheduled job, then Google Sheet, then Teams channel">
-            <span>Daily job</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            <span>Google Sheet</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            <span>Teams channel</span>
+            <span>⏰ Daily job</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            <span>📊 Google Sheet</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            <span>💬 Teams</span>
           </div>
         </article>
 
-        <article class="proj" style="--c:#ea580c">
-          <div class="meta"><span class="tag">AI integration</span><span class="pill">AI features</span></div>
+        <article class="card proj reveal" style="--c:#fb923c">
+          <span class="bar"></span>
+          <div class="meta"><span class="tag">AI integration</span><span class="pill"><i></i>AI features</span></div>
           <h3>Claude &amp; Gemini in the app</h3>
           <p>Connected Anthropic Claude and Google Gemini models to application features through C# services and REST APIs, so users get AI-generated results inside the product.</p>
           <div class="chips"><span class="chip">C#</span><span class="chip">REST</span><span class="chip">Claude API</span><span class="chip">Gemini API</span></div>
         </article>
 
-        <article class="proj" style="--c:#475569">
-          <div class="meta"><span class="tag">This site</span><span class="pill">Open source</span></div>
+        <article class="card proj reveal" style="--c:#94a3b8">
+          <span class="bar"></span>
+          <div class="meta"><span class="tag">This site</span><span class="pill"><i></i>Open source</span></div>
           <h3>Portfolio &amp; CV</h3>
-          <p>This portfolio and my CV page, hand-written in HTML, CSS and JavaScript with light and dark themes, hosted on GitHub Pages.</p>
-          <div><a class="btn ghost small" href="https://github.com/varshakumari-dev/varshakumari-dev.github.io" target="_blank" rel="noopener">View the code ↗</a></div>
+          <p>This portfolio and my CV page, hand-written in HTML, CSS and JavaScript and hosted on GitHub Pages.</p>
+          <div><a class="btn ghost sm" href="https://github.com/varshakumari-dev/varshakumari-dev.github.io" target="_blank" rel="noopener">View the code ↗</a></div>
         </article>
       </div>
     </div>
   </section>
 
-  <section class="block" id="experience">
+  <section class="s" id="experience">
     <div class="wrap">
-      <div class="eyebrow">Experience</div>
-      <h2>Where I've <span>been.</span></h2>
-      <div class="xp" style="margin-top:34px">
-        <div class="when">Jul 2025 – Present</div>
-        <div class="item" style="--c:var(--blue)">
-          <h3>Software Developer</h3>
+      <div class="reveal"><span class="eyebrow">Experience</span>
+      <h2>My <span class="grad">journey</span> so far.</h2></div>
+      <div class="xp" style="margin-top:40px">
+        <div class="xpi card reveal" style="--c:#38bdf8">
+          <div class="head"><h3>Software Developer</h3><span class="when">Jul 2025 – Present</span></div>
           <div class="co">Realiser Labs Pvt Ltd · Pune · Client: BOLD Precious Metals (USA)</div>
-          <ul class="list">
+          <ul class="ticks">
             <li>End-to-end feature development with .NET Core, ASP.NET MVC, Web API, C# and Angular.</li>
             <li>SQL Server queries and stored procedures; data access with Entity Framework, Dapper and ADO.NET.</li>
             <li>Unit testing, bug fixing and deployment on testing servers.</li>
@@ -382,78 +431,98 @@ footer{padding-block:40px 56px;color:var(--muted);font:500 13px var(--mono);disp
             <li>Built a scheduled daily job that posts a Google Sheet report link to Microsoft Teams.</li>
           </ul>
         </div>
-        <div class="when">2021 – 2024</div>
-        <div class="item" style="--c:var(--teal)">
-          <h3>Bachelor of Computer Applications (BCA)</h3>
-          <div class="co">Veer Kunwar Singh University</div>
+        <div class="xpi card reveal" style="--c:#2dd4bf">
+          <div class="head"><h3>Bachelor of Computer Applications (BCA)</h3><span class="when">2021 – 2024</span></div>
+          <div class="co" style="margin-bottom:0">Veer Kunwar Singh University</div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="block" id="process">
+  <section class="s" id="process">
     <div class="wrap">
-      <div class="eyebrow">How I work</div>
-      <h2>One feature, <span>start to finish.</span></h2>
-      <p class="sub">The path every change I make takes, from the request to the testing server.</p>
+      <div class="reveal"><span class="eyebrow">Process</span>
+      <h2>One feature, <span class="grad">start to finish.</span></h2>
+      <p class="sub">The path every change I make takes, from the request to the testing server.</p></div>
       <div class="steps">
-        <div class="step"><b>Understand</b><span>Read the requirement and agree on what done looks like.</span></div>
-        <div class="step"><b>Data first</b><span>Design the tables, queries and stored procedures in SQL Server.</span></div>
-        <div class="step"><b>Build</b><span>Write the Web API in .NET Core and the Angular or MVC screens.</span></div>
-        <div class="step"><b>Test &amp; fix</b><span>Unit test, check the API in Postman and fix what breaks.</span></div>
-        <div class="step"><b>Deploy</b><span>Ship the build to the testing server for review.</span></div>
+        <div class="card step reveal"><div class="n grad">01</div><b>Understand</b><span>Read the requirement and agree on what done looks like.</span></div>
+        <div class="card step reveal"><div class="n grad">02</div><b>Data first</b><span>Design the tables, queries and stored procedures in SQL Server.</span></div>
+        <div class="card step reveal"><div class="n grad">03</div><b>Build</b><span>Write the Web API in .NET Core and the Angular or MVC screens.</span></div>
+        <div class="card step reveal"><div class="n grad">04</div><b>Test &amp; fix</b><span>Unit test, check the API in Postman and fix what breaks.</span></div>
+        <div class="card step reveal"><div class="n grad">05</div><b>Deploy</b><span>Ship the build to the testing server for review.</span></div>
       </div>
     </div>
   </section>
 
-  <section class="block" id="contact" style="padding-bottom:0">
+  <section class="s" id="contact">
     <div class="wrap">
-      <div class="contact">
+      <div class="card contact reveal">
         <div>
-          <div class="eyebrow" style="color:#38bdf8">Contact</div>
-          <h2>Let's build <span>something.</span></h2>
-          <p>I'm open to .NET full stack developer roles. Write to me or download my CV.</p>
-          <div class="cta" style="margin-top:20px"><a class="btn primary" href="Varsha_Kumari_CV.pdf" download>Download CV (PDF)</a><a class="btn ghost" href="cv.html">View CV online</a></div>
+          <span class="eyebrow">Contact</span>
+          <h2>Let's build <span class="grad">something great.</span></h2>
+          <p style="color:var(--muted);font-size:17px">I'm open to .NET full stack developer roles. Write to me, or download my CV.</p>
+          <div class="cta" style="margin-top:26px"><a class="btn primary" href="Varsha_Kumari_CV.pdf" download>Download CV (PDF)</a><a class="btn ghost" href="cv.html">View CV online</a></div>
         </div>
         <div class="lines">
-          <div class="line"><div><small>Email</small><a class="v" id="email" href="mailto:vkvarsh31@gmail.com" style="text-decoration:none;color:inherit">vkvarsh31@gmail.com</a></div><button class="copy" id="copy" type="button">Copy</button></div>
-          <a class="line" href="tel:+917349860204"><div><small>Phone</small><span class="v">+91 73498 60204</span></div><span aria-hidden="true">↗</span></a>
-          <a class="line" href="https://www.linkedin.com/in/vkvarsha/" target="_blank" rel="noopener"><div><small>LinkedIn</small><span class="v">in/vkvarsha</span></div><span aria-hidden="true">↗</span></a>
-          <a class="line" href="https://github.com/varshakumari-dev" target="_blank" rel="noopener"><div><small>GitHub</small><span class="v">varshakumari-dev</span></div><span aria-hidden="true">↗</span></a>
+          <div class="line"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><div><small>Email</small><a class="v" id="email" href="mailto:vkvarsh31@gmail.com" style="text-decoration:none;font:500 15px var(--mono);overflow-wrap:anywhere">vkvarsh31@gmail.com</a></div><button class="copy" id="copy" type="button">Copy</button></div>
+          <a class="line" href="tel:+917349860204"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span><div><small>Phone</small><span class="v">+91 73498 60204</span></div></a>
+          <a class="line" href="https://www.linkedin.com/in/vkvarsha/" target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C20.6 8.65 21 11.3 21 14.7V21h-4v-5.6c0-1.33-.02-3.05-1.86-3.05-1.86 0-2.14 1.45-2.14 2.95V21H9z"/></svg></span><div><small>LinkedIn</small><span class="v">in/vkvarsha</span></div></a>
+          <a class="line" href="https://github.com/varshakumari-dev" target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg></span><div><small>GitHub</small><span class="v">varshakumari-dev</span></div></a>
         </div>
       </div>
     </div>
   </section>
 </main>
 
-<div class="wrap"><footer><span>© 2026 Varsha Kumari · Pune, India</span><span>Built with HTML, CSS &amp; JavaScript</span></footer></div>
-
-<button class="top-btn" id="toTop" type="button" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+<div class="wrap"><footer><span>© 2026 Varsha Kumari · Pune, India</span><span>Designed &amp; built with HTML, CSS &amp; JavaScript</span></footer></div>
+<button class="totop" id="totop" type="button" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
 
 <script>
 (function(){
-  var root=document.documentElement;
-  document.getElementById('theme').addEventListener('click',function(){
-    var cur=root.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
-    var next=cur==='dark'?'light':'dark'; root.setAttribute('data-theme',next);
-    try{localStorage.setItem('vk-theme',next)}catch(e){}
-  });
-  var nav=document.getElementById('nav'),menu=document.getElementById('menu');
-  menu.addEventListener('click',function(){var o=nav.classList.toggle('open');menu.setAttribute('aria-expanded',o)});
-  nav.addEventListener('click',function(e){if(e.target.tagName==='A'){nav.classList.remove('open');menu.setAttribute('aria-expanded','false')}});
-  var bar=document.getElementById('progress'),top=document.getElementById('toTop');
-  function onScroll(){var h=document.documentElement.scrollHeight-innerHeight;bar.style.transform='scaleX('+(h>0?scrollY/h:0)+')';top.classList.toggle('show',scrollY>600)}
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.documentElement.classList.add('js');
+
+  // menu
+  var links=document.getElementById('links'),menu=document.getElementById('menu');
+  menu.addEventListener('click',function(){var o=links.classList.toggle('open');menu.setAttribute('aria-expanded',o)});
+  links.addEventListener('click',function(e){if(e.target.tagName==='A'){links.classList.remove('open');menu.setAttribute('aria-expanded','false')}});
+
+  // progress + back to top
+  var bar=document.getElementById('progress'),top=document.getElementById('totop');
+  function onScroll(){var h=document.documentElement.scrollHeight-innerHeight;bar.style.transform='scaleX('+(h>0?scrollY/h:0)+')';top.classList.toggle('show',scrollY>700)}
   addEventListener('scroll',onScroll,{passive:true});onScroll();
-  top.addEventListener('click',function(){scrollTo({top:0,behavior:'smooth'})});
-  var links=[].slice.call(nav.querySelectorAll('a'));
-  if('IntersectionObserver' in window){
-    var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+en.target.id)})}})},{rootMargin:'-45% 0px -50% 0px'});
-    links.forEach(function(a){var s=document.querySelector(a.getAttribute('href'));if(s)io.observe(s)});
+  top.addEventListener('click',function(){scrollTo({top:0,behavior:reduce?'auto':'smooth'})});
+
+  // reveal + counters + active nav
+  var reveals=[].slice.call(document.querySelectorAll('.reveal'));
+  function count(el){var to=parseFloat(el.dataset.count),d=+(el.dataset.dec||0),t0=null;function f(t){if(!t0)t0=t;var p=Math.min((t-t0)/1200,1),e=1-Math.pow(1-p,3);el.textContent=(to*e).toFixed(d);if(p<1)requestAnimationFrame(f)}requestAnimationFrame(f)}
+  if('IntersectionObserver' in window&&!reduce){
+    var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){var el=en.target,i=[].indexOf.call(el.parentNode.children,el);el.style.transitionDelay=Math.min(i,5)*80+'ms';el.classList.add('in');var c=el.querySelector('[data-count]');if(c)count(c);io.unobserve(el)}})},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+    reveals.forEach(function(r){io.observe(r)});
+    var navA=[].slice.call(links.querySelectorAll('a'));
+    var io2=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting)navA.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+en.target.id)})})},{rootMargin:'-45% 0px -50% 0px'});
+    navA.forEach(function(a){var s=document.querySelector(a.getAttribute('href'));if(s)io2.observe(s)});
+  } else reveals.forEach(function(r){r.classList.add('in')});
+
+  // card spotlight
+  document.querySelectorAll('.card').forEach(function(c){c.addEventListener('pointermove',function(e){var r=c.getBoundingClientRect();c.style.setProperty('--mx',e.clientX-r.left+'px');c.style.setProperty('--my',e.clientY-r.top+'px')})});
+
+  // typed role
+  var roles=['.NET Full Stack Developer','ASP.NET Core & Web API Developer','Angular Developer','SQL Server & Stored Procedures'],ty=document.getElementById('typed');
+  if(!reduce){var ri=0,ci=roles[0].length,del=true;setTimeout(function tick(){var w=roles[ri];if(del){ci--;if(ci<=0){del=false;ri=(ri+1)%roles.length}}else{ci++;if(ci>=roles[ri].length){del=true;ty.textContent=roles[ri];return setTimeout(tick,2200)}}ty.textContent=roles[ri].slice(0,Math.max(ci,0));setTimeout(tick,del?35:70)},2600)}
+
+  // SQL window: type the query once, then reveal the result
+  if(!reduce){
+    var code=document.getElementById('code'),full=code.innerHTML,res=document.getElementById('res'),ok=document.getElementById('ok');
+    var plain=code.textContent;res.classList.remove('show');ok.classList.remove('show');code.textContent='';
+    var i=0;(function t(){i+=2;code.textContent=plain.slice(0,i);if(i<plain.length)setTimeout(t,28);else{code.innerHTML=full;setTimeout(function(){res.classList.add('show');ok.classList.add('show')},250)}})();
   }
+
+  // copy email
   document.getElementById('copy').addEventListener('click',function(){
     var b=this,t=document.getElementById('email').textContent;
     function sel(){var r=document.createRange();r.selectNodeContents(document.getElementById('email'));var s=getSelection();s.removeAllRanges();s.addRange(r)}
-    try{navigator.clipboard.writeText(t).then(function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy'},1500)},sel)}catch(e){sel()}
+    try{navigator.clipboard.writeText(t).then(function(){b.textContent='Copied ✓';setTimeout(function(){b.textContent='Copy'},1500)},sel)}catch(e){sel()}
   });
 })();
 </script>
